@@ -1,0 +1,96 @@
+/* ISONet: photographic introduction, dark technical fields, light reading surfaces.
+   Main page only. Section content, layouts and shared solution pages are preserved. */
+body[data-home-design="integrated"]{
+ --rhythm-dark:#080f17;--rhythm-navy:#0b2033;--rhythm-light:#f7fafc;
+ --rhythm-ink:#102f49;--rhythm-copy:#425e73;--rhythm-cyan:#83d6ef;--rhythm-orange:#efa15f;
+ background:#080f17!important;background-image:none!important;color:#eaf4fb;
+}
+/* The photograph belongs to the hero; the rest uses intentional, quieter grounds. */
+body[data-home-design="integrated"] main #inicio.professional-hero{
+ background:linear-gradient(90deg,#071d35f5 0%,#10344fe8 38%,#204d6bba 75%,#173d5b9c),url('../ISONet_Oficial/assets/hero-realista.webp') center 45%/cover no-repeat!important;
+}
+/* Technical network: cyan light on near-black, with a light, readable diagram. */
+body[data-home-design] main section#red-operaciones{
+ background:radial-gradient(ellipse at 90% 20%,#12638625,transparent 55%),linear-gradient(135deg,#080f17,#0b1d2d)!important;
+ border-top:1px solid #8db6d11f;border-bottom:1px solid #8db6d11f;
+}
+body[data-home-design] #red-operaciones>div:first-child{opacity:.3}
+body[data-home-design] #red-operaciones>div:nth-child(2)>div:first-child h2{color:#f3f8fc!important}
+body[data-home-design] #red-operaciones>div:nth-child(2)>div:first-child h2>span:not(.official-word){color:#83d6ef!important}
+body[data-home-design] #red-operaciones .backdrop-blur-2xl{background:#f3f8fcf5!important;border-color:#b0d8ed66!important;box-shadow:0 18px 64px #00000024!important}
+/* Coverage: white daylight after the dark diagram. */
+body[data-home-design] main .retained-design section#cobertura.home-coverage{
+ padding-top:80px!important;
+ background:radial-gradient(ellipse at 90% 45%,#c4e7f580,transparent 60%),linear-gradient(145deg,#ffffff,#eaf3f9)!important;
+ border-top:1px solid #ffffff;border-bottom:1px solid #cbdde8;
+}
+body[data-home-design] #cobertura .home-kicker{color:#00678e}
+body[data-home-design] #cobertura .home-map{background:radial-gradient(ellipse,#fff,transparent 69%)}
+/* Benefits: open columns on black-blue with orange used once in the heading. */
+body[data-home-design] main section#beneficios{
+ background:radial-gradient(ellipse at 0% 100%,#08456a38,transparent 60%),#080f17!important;
+ border-block:1px solid #84aec322;
+}
+body[data-home-design] #beneficios h2{color:#f5f9fc!important}
+body[data-home-design] #beneficios h2>span:not(.official-word){color:#efa15f!important}
+body[data-home-design] #beneficios .grid>div{border-left-color:#7c9eb132!important}
+/* Solutions: pearl cards, quiet shadows, precise cyan edges and orange actions. */
+body[data-home-design] main .retained-design section#soluciones.home-solutions{
+ background:radial-gradient(ellipse at 0% 0%,#c8e2f34a,transparent 58%),#f7fafc!important;
+ border-top:1px solid #fff;border-bottom:1px solid #d9e4ec;
+}
+body[data-home-design] #soluciones .home-service{background:#fff;border-color:#d2e0e9;box-shadow:0 7px 22px #092e4a06}
+body[data-home-design] #soluciones .home-service:hover{border-color:#5eacc9;box-shadow:0 16px 36px #0c3d5a13}
+body[data-home-design] #soluciones .home-service-title svg{color:#00729d}
+body[data-home-design] #soluciones .home-details{border-color:#dbe5ec;color:#006b91}
+body[data-home-design] #soluciones .home-details>span{color:#bc5a12}
+/* Support: designed navy ground; process remains an open, structured list. */
+body[data-home-design] main .retained-design section#soporte.home-support{
+ position:relative;isolation:isolate;
+ background:radial-gradient(ellipse at 2% 90%,#007aab24,transparent 54%),radial-gradient(ellipse at 100% 0%,#0d456838,transparent 55%),linear-gradient(130deg,#080f17,#0b2236)!important;
+ border-block:1px solid #8db6d124;
+}
+body[data-home-design] #soporte.home-support:before{
+ content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;
+ background-image:linear-gradient(#76c4e408 1px,transparent 1px),linear-gradient(90deg,#76c4e408 1px,transparent 1px);
+ background-size:72px 72px;mask-image:linear-gradient(130deg,transparent 15%,#0009 100%);
+}
+body[data-home-design] .retained-design #soporte.home-support h2{color:#f2f8fc!important}
+body[data-home-design] .retained-design #soporte.home-support h2 em{color:#83d6ef!important}
+body[data-home-design] #soporte.home-support .home-section-head>p{color:#bfd3e1}
+body[data-home-design] .retained-design #soporte.home-support .home-support-steps h3{color:#f2f7fc!important}
+body[data-home-design] #soporte.home-support .home-support-steps p{color:#bdd0df}
+body[data-home-design] #soporte.home-support .home-support-steps li{border-color:#789eb338}
+body[data-home-design] #soporte.home-support .home-support-steps li>span{color:#7cd4f0}
+body[data-home-design] .retained-design #soporte.home-support a.home-button{background:#c55b12!important;color:#fff!important}
+body[data-home-design] .retained-design #soporte.home-support a.home-link{background:transparent!important;color:#c5e8f9!important}
+body[data-home-design] #soporte.home-support .home-support-visual{border:1px solid #75a8c448;box-shadow:0 18px 50px #0003}
+/* The partners share the technical field rather than introducing another blue. */
+body[data-home-design] main .official-partners-section{background:#080f17!important;border-top:0;border-bottom:1px solid #abc7d21c}
+body[data-home-design] .official-partner-logo{background:#142638!important;border-color:#668aa33d}
+/* FAQ: a calm, bright reading break before contact. */
+body[data-home-design] main section#faq.official-faq{
+ background:linear-gradient(145deg,#fff,#edf5fa)!important;border-block:1px solid #d5e4ed;
+}
+body[data-home-design] main #faq.official-faq h2{color:#102f49!important}
+body[data-home-design] main #faq.official-faq h2>span:not(.official-word){color:#006d98!important}
+body[data-home-design] main #faq.official-faq .official-section-heading p{color:#425e73!important}
+body[data-home-design] main #faq .official-questions details{background:#ffffffed!important;border-color:#cddfe9!important;box-shadow:0 4px 18px #123b5004!important}
+body[data-home-design] main #faq .official-questions summary{color:#102f49!important}
+body[data-home-design] main #faq .official-answer{color:#425e73}
+/* Conversion: a cyan halo gives the closing band depth, with a white form. */
+body[data-home-design] main section#cotizar{
+ background:radial-gradient(ellipse at 0% 100%,#0b557d52,transparent 65%),linear-gradient(120deg,#0b2135,#080f17)!important;
+ border-top:1px solid #8cb8cf24;
+}
+body[data-home-design] #cotizar .lg\:col-span-7{background:#f6faff!important;border-color:#fff!important;box-shadow:0 20px 60px #0002}
+body[data-home-design] #cotizar .lg\:col-span-5>div:last-child{background:#f1f8fdf5!important}
+body[data-home-design] footer{background:#080f17!important;margin-top:0!important;border-top:1px solid #91bcd329!important}
+/* Word reveal must inherit the chosen section palette, including nested accents. */
+body[data-home-design] main section h2 span.official-word,
+body[data-home-design] main section h3 span.official-word{color:inherit!important}
+@media(max-width:639px){
+ body[data-home-design="integrated"] main #inicio.professional-hero{background-position:center,65% center!important}
+ body[data-home-design] main .retained-design section#cobertura.home-coverage{padding-top:56px!important}
+ body[data-home-design] #soporte.home-support:before{background-size:48px 48px}
+}

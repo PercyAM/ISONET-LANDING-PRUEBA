@@ -1,0 +1,66 @@
+/* One navigation layout shared by the homepage and every solution. */
+html body[data-glass-theme] .official-header{position:fixed!important;inset:0 0 auto!important;width:100%!important;z-index:100}
+html body[data-glass-theme] .official-nav{
+ display:flex!important;align-items:center;width:100%!important;max-width:none!important;min-height:82px!important;margin:0!important;
+ padding:8px max(24px,calc((100vw - 1200px)/2))!important;border:0!important;border-bottom:1px solid #102f4918!important;border-radius:0!important;
+ background:rgba(250,252,254,.97)!important;box-shadow:0 4px 18px #061b2b0c!important;
+ backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);gap:24px!important;
+ transition:background 220ms ease,box-shadow 220ms ease;
+}
+html body[data-glass-theme] .official-nav .official-brand{margin:0!important;align-self:center}
+html body[data-glass-theme] .official-nav .official-logo{width:145px!important;height:63px!important;object-fit:contain}
+html body[data-glass-theme] .official-nav nav{justify-content:center;gap:clamp(18px,2.8vw,40px)}
+html body[data-glass-theme] .official-nav :is(nav>a,.official-solutions-link,#official-dropdown a){color:#000!important;font-family:'Source Sans 3',Arial,sans-serif;font-size:16px;font-weight:600}
+html body[data-glass-theme] .official-nav .official-quote{margin:0!important;align-self:center;padding:12px 23px!important;background:#f89010!important;color:#0b1220!important;border-radius:999px!important;font:600 15px 'Source Sans 3',Arial,sans-serif!important;white-space:nowrap;box-shadow:none!important}
+html body[data-glass-theme].header-is-scrolled .official-nav{background:rgba(244,249,252,.78)!important;border-bottom-color:#ffffff70!important;box-shadow:0 8px 26px #061b2b18!important;backdrop-filter:blur(18px) saturate(135%);-webkit-backdrop-filter:blur(18px) saturate(135%)}
+@media(min-width:901px){
+ html body[data-glass-theme] .official-nav{display:grid!important;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr)!important}
+ html body[data-glass-theme] .official-nav .official-brand{justify-self:start}
+ html body[data-glass-theme] .official-nav nav{justify-self:center;flex:none!important}
+ html body[data-glass-theme] .official-nav .official-quote{justify-self:end}
+}
+@media(max-width:900px){
+ html body[data-glass-theme] .official-nav{min-height:74px!important;padding-inline:16px!important;gap:14px!important}
+ html body[data-glass-theme] .official-nav .official-brand{margin-right:auto!important}
+ html body[data-glass-theme] .official-nav .official-logo{width:125px!important;height:60px!important}
+ html body[data-glass-theme] .official-nav nav{gap:4px}
+}
+@media(max-width:500px){
+ html body[data-glass-theme] .official-nav{gap:9px!important;padding-inline:12px!important}
+ html body[data-glass-theme] .official-nav .official-logo{width:105px!important}
+ html body[data-glass-theme] .official-nav .official-quote{padding:12px 14px!important;font-size:13px!important}
+}
+/* Shared understated vertical scrollbar; no nested horizontal scroll container. */
+html{overflow-x:clip;scrollbar-width:thin;scrollbar-color:rgba(178,201,214,.48) rgba(9,27,44,.16)}
+::-webkit-scrollbar{width:8px;height:0}
+::-webkit-scrollbar:horizontal{display:none}
+::-webkit-scrollbar-track{background:rgba(9,27,44,.16)}
+::-webkit-scrollbar-thumb{background:rgba(178,201,214,.48);border:2px solid transparent;background-clip:padding-box;border-radius:999px}
+::-webkit-scrollbar-thumb:hover{background:rgba(202,220,230,.68);background-clip:padding-box}
+/* Cross-document transitions preserve the current screen until the next is ready. */
+@view-transition{navigation:auto}
+html{background-color:#173d5b}
+::view-transition-group(root){animation-duration:180ms;animation-timing-function:ease-out}
+::view-transition-old(root){animation-duration:180ms}
+::view-transition-new(root){animation-duration:180ms}
+html body[data-glass-theme] .official-header{view-transition-name:isonet-navigation}
+::view-transition-group(isonet-navigation){animation-duration:180ms}
+::view-transition-old(isonet-navigation){animation:none;opacity:0}
+::view-transition-new(isonet-navigation){animation:none;opacity:1}
+@media(prefers-reduced-motion:reduce){
+ ::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation-duration:0s!important}
+}
+/* Keep the navigation steady while the page content changes. */
+::view-transition-old(root),::view-transition-new(root){animation:none!important;mix-blend-mode:normal}
+html body[data-glass-theme] main{view-transition-name:isonet-content}
+::view-transition-group(isonet-content){animation-duration:240ms;animation-timing-function:cubic-bezier(.22,1,.36,1)}
+::view-transition-old(isonet-content){animation:isonet-page-out 140ms ease-out both}
+::view-transition-new(isonet-content){animation:isonet-page-in 260ms cubic-bezier(.22,1,.36,1) both}
+@keyframes isonet-page-out{to{opacity:0}}
+@keyframes isonet-page-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.isonet-reveal{opacity:1;transform:none;transition:opacity 480ms ease-out,transform 480ms cubic-bezier(.22,1,.36,1)}
+.isonet-reveal.isonet-pending{opacity:0;transform:translateY(14px)}
+@media(prefers-reduced-motion:reduce){
+ .isonet-reveal,.isonet-reveal.isonet-pending{opacity:1;transform:none;transition:none}
+ ::view-transition-old(isonet-content),::view-transition-new(isonet-content){animation:none!important}
+}

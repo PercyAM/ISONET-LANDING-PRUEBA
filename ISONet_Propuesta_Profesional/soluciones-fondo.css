@@ -1,0 +1,50 @@
+/* Shared photo backdrop and readable surfaces for all five service pages. */
+html{overflow-x:clip}
+body[data-glass-theme]:not([data-home-design]){
+ background:#173d5b!important;
+ background-image:linear-gradient(90deg,rgba(7,29,53,.78),rgba(16,52,79,.65) 38%,rgba(32,77,107,.43) 75%,rgba(23,61,91,.32)),url('../ISONet_Oficial/assets/hero-realista.webp')!important;
+ background-position:center,center 45%!important;background-size:cover!important;background-repeat:no-repeat!important;background-attachment:fixed!important;color:#d7eaf4!important;
+}
+body[data-glass-theme]:not([data-home-design]) main section{background:rgba(5,27,46,.30)!important}
+body[data-glass-theme]:not([data-home-design]) main :is(h1,h2,h3,h4),
+body[data-glass-theme]:not([data-home-design]) main :is(h1,h2,h3,h4) *{color:#f6fbff!important}
+body[data-glass-theme]:not([data-home-design]) main :is(p,li,.text-on-surface-variant,.text-primary,.official-answer){color:#d7eaf4!important}
+body[data-glass-theme]:not([data-home-design]) main :is(.text-secondary,.official-ui-icon,.official-service-highlights svg){color:#8bdcf3!important}
+body[data-glass-theme]:not([data-home-design]) main nav a,
+body[data-glass-theme]:not([data-home-design]) #cotizar .official-contact-numbers a,
+body[data-glass-theme]:not([data-home-design]) #cotizar a[href^='mailto:']{color:#eef7fc!important}
+body[data-glass-theme]:not([data-home-design]) main .official-service-highlights{background:rgba(10,38,57,.60)!important;border-color:#badfec55!important;color:#d7eaf4!important}
+body[data-glass-theme]:not([data-home-design]) main [class~='bg-surface-container-low/40'],
+body[data-glass-theme]:not([data-home-design]) main [class~='bg-surface-container-low/50']{background:rgba(14,43,62,.35)!important}
+/* Light cards and form keep dark text against their pearl surface. */
+body[data-glass-theme]:not([data-home-design]) main .bg-surface-container-lowest{
+ background:rgba(255,255,255,.92)!important;border:1px solid #ffffffb0!important;backdrop-filter:none!important;
+}
+body[data-glass-theme]:not([data-home-design]) main .bg-surface-container-lowest :is(h2,h3,h4,p,li,label,span,.text-primary,.text-on-surface-variant){color:#24445d!important}
+body[data-glass-theme]:not([data-home-design]) main .bg-surface-container-lowest :is(svg,.material-symbols-outlined){color:#087fa6!important}
+body[data-glass-theme]:not([data-home-design]) main form :is(input,select,textarea){background:#f8fbfd!important;color:#17364d!important;border:1px solid #a9becd!important}
+body[data-glass-theme]:not([data-home-design]) main form :is(input,textarea)::placeholder{color:#587184!important;opacity:1}
+body[data-glass-theme]:not([data-home-design]) main form button[type='submit'],
+body[data-glass-theme]:not([data-home-design]) main form button[type='submit'] *{color:#fff!important}
+/* Supporting steps and FAQ use the homepage's subdued glass treatment. */
+body[data-glass-theme]:not([data-home-design]) main .official-process li,
+body[data-glass-theme]:not([data-home-design]) main .official-questions details{background:rgba(28,43,55,.65)!important;border:1px solid #badfec55!important;backdrop-filter:none!important}
+body[data-glass-theme]:not([data-home-design]) main .official-process li>span{color:#8bdcf3!important}
+body[data-glass-theme]:not([data-home-design]) main .official-questions summary{color:#f6fbff!important}
+body[data-glass-theme]:not([data-home-design]) main .official-questions summary:after{color:#8bdcf3!important}
+body[data-glass-theme]:not([data-home-design]) footer{background:#071a2e!important}
+@media(max-width:700px){body[data-glass-theme]:not([data-home-design]){background-attachment:scroll!important}}
+/* Consistent service typography, glass panels, controls and accents. */
+body[data-glass-theme]:not([data-home-design]) main h1{font-family:Manrope,Arial,sans-serif!important;font-weight:700!important}
+body[data-glass-theme]:not([data-home-design]) main :is(h2,h3,h4){font-family:Lexend,Arial,sans-serif!important;font-weight:600!important}
+body[data-glass-theme]:not([data-home-design]) main .official-process li>span{font-family:Manrope,Arial,sans-serif;font-weight:700}
+body[data-glass-theme]:not([data-home-design]) main a[href='#cotizar'],
+body[data-glass-theme]:not([data-home-design]) main button[type='submit']{background:#f89010!important;color:#102b43!important;border-radius:999px!important;padding:14px 24px;transition:background-color 180ms ease,transform 180ms ease}
+body[data-glass-theme]:not([data-home-design]) main button[type='submit'] *{color:inherit!important}
+body[data-glass-theme]:not([data-home-design]) main a[href='#cotizar']:hover,
+body[data-glass-theme]:not([data-home-design]) main button[type='submit']:hover{background:#ffa62b!important;transform:translateY(-2px)}
+body[data-glass-theme]:not([data-home-design]) main form :is(input,textarea,select){border-radius:9px!important;min-height:48px}
+body[data-glass-theme]:not([data-home-design]) main .official-questions summary:after{display:none!important}
+body[data-glass-theme]:not([data-home-design]) main .official-questions details{border-radius:14px!important}
+body[data-glass-theme]:not([data-home-design]) main .official-process li{border-radius:14px!important}
+@media(prefers-reduced-motion:reduce){body[data-glass-theme]:not([data-home-design]) main :is(a[href='#cotizar'],button[type='submit']){transition:none!important;transform:none!important}}

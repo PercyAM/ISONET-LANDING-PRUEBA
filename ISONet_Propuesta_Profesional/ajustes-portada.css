@@ -1,0 +1,712 @@
+/* Restore the homepage hero's original geometry without changing shared service CSS. */
+body[data-home-design] .professional-wrap{width:min(1200px,calc(100% - 96px));margin-inline:auto}
+body[data-home-design] main{padding-top:0!important}
+body[data-home-design] #inicio.professional-hero{min-height:100svh;position:relative;display:flex;flex-direction:column;padding-top:150px;isolation:isolate;overflow:hidden;font-family:Manrope,Arial,sans-serif}
+body[data-home-design] #inicio .professional-hero-content{padding-top:36px;padding-bottom:60px;flex:1;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+body[data-home-design] #inicio h1{font-family:Manrope,Arial,sans-serif!important;font-size:clamp(43px,4.7vw,68px)!important;max-width:800px;font-weight:700!important;letter-spacing:-.045em!important;line-height:1.08!important;margin:0 0 24px}
+body[data-home-design] #inicio .professional-eyebrow{font-size:12px;letter-spacing:.12em;margin:0 0 26px;font-weight:600}
+body[data-home-design] #inicio .professional-hero-lead{font-size:19px;max-width:500px;margin:0 0 30px;line-height:1.75}
+body[data-home-design] #inicio .professional-capacity{display:flex;align-items:center;gap:22px;margin-bottom:32px}
+body[data-home-design] #inicio .professional-capacity strong{font-size:43px;font-weight:700;letter-spacing:-.04em;line-height:1;white-space:nowrap}
+body[data-home-design] #inicio .professional-capacity strong span{font-size:24px;font-weight:500}
+body[data-home-design] #inicio .professional-capacity>span{font-size:13px;line-height:1.65;border-left:1px solid #517b9659;padding-left:22px}
+body[data-home-design] #inicio .professional-capacity b{font-weight:600}
+body[data-home-design] #inicio .professional-hero-actions{display:flex;align-items:center;gap:30px}
+body[data-home-design] #inicio .professional-button{display:inline-flex;align-items:center;gap:20px;padding:15px 22px;min-height:50px;font-size:14px;font-weight:650;border-radius:8px;text-decoration:none;transition:transform 180ms ease,background-color 180ms ease}
+body[data-home-design] #inicio .professional-button:hover{transform:translateY(-2px)}
+body[data-home-design] #inicio .professional-text-link{display:inline-flex;align-items:center;gap:18px;font-size:14px;font-weight:600;text-decoration:none;padding:14px 0;border-bottom:1px solid #346d8c88;transition:transform 180ms ease,background-color 180ms ease}
+body[data-home-design] #inicio .professional-text-link:hover{transform:translateY(-2px);text-decoration:none}
+body[data-home-design] #inicio .professional-facts{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:22px;padding-block:24px 30px;font-size:12px;font-weight:600;line-height:1.5;border-top:1px solid #ffffff44}
+body[data-home-design] #inicio .professional-facts>div{border-left:1px solid #aac8dc33;padding-left:15px}
+body[data-home-design] #inicio .professional-facts>div:first-child{border-left:0;padding-left:0}
+/* Benefit label and heading use the same left edge as the content beneath them. */
+html body[data-visual-style][data-home-design] #beneficios .text-center{width:100%;max-width:none!important;margin-inline:0!important;display:grid!important;grid-template-columns:1fr 1.15fr;gap:14px 65px;align-items:center;text-align:left!important;margin-bottom:42px}
+html body[data-visual-style][data-home-design] #beneficios .text-center>span{grid-column:1/-1;justify-self:start;text-align:left;margin-left:0;padding-left:0}
+/* A repeated sequence of pale technical surfaces, white reading areas and navy bands. */
+html body[data-visual-style][data-home-design] main section#red-operaciones{background:linear-gradient(145deg,#eef4fc,#f8fbff)!important;border-block:1px solid #dbe4f0}
+html body[data-visual-style][data-home-design] main .retained-design section#cobertura.home-coverage{background:radial-gradient(ellipse at 90% 55%,#e0f0fc,transparent 58%),#fff!important;border-block:1px solid #e4ebf3}
+html body[data-visual-style][data-home-design] main section#beneficios{background:radial-gradient(ellipse at 100% 0%,#164c713d,transparent 65%),linear-gradient(120deg,#091b2d,#102e48)!important;border-block:1px solid #6ca8cd33}
+html body[data-visual-style][data-home-design] main section#beneficios h2,
+html body[data-visual-style][data-home-design] main section#beneficios .grid>div h3{color:#f5f9ff!important}
+html body[data-visual-style][data-home-design] main section#beneficios h2>span:not(.official-word){color:#83d6ef!important}
+html body[data-visual-style][data-home-design] main section#beneficios .text-center>span{color:#8bd5f5!important}
+html body[data-visual-style][data-home-design] main section#beneficios .text-center>p,
+html body[data-visual-style][data-home-design] main section#beneficios .grid>div p{color:#c6d8e7!important}
+html body[data-visual-style][data-home-design] main section#beneficios .grid>div{border-left-color:#8cb5d133!important;background:transparent!important}
+html body[data-visual-style][data-home-design] main section#beneficios .grid>div>div:first-child{color:#7dd3fc!important}
+html body[data-visual-style][data-home-design] main .retained-design section#soluciones.home-solutions{background:linear-gradient(155deg,#edf4ff,#f4f7fb 65%,#eaf1fa)!important}
+html body[data-visual-style][data-home-design] main .retained-design section#soporte.home-support{background:radial-gradient(ellipse at 0% 90%,#d5eafb,transparent 55%),linear-gradient(140deg,#f1f7fe,#e4effa)!important;border-block:1px solid #cddfec}
+html body[data-visual-style][data-home-design] main section#faq.official-faq{background:#fff!important}
+html body[data-visual-style][data-home-design] main section#cotizar{background:radial-gradient(ellipse at 0% 100%,#174f7255,transparent 70%),linear-gradient(120deg,#102d46,#0b1d30)!important;border-block:1px solid #729bb933}
+html body[data-visual-style][data-home-design] main section#cotizar .lg\:col-span-5 h2{color:#f5f9ff!important}
+html body[data-visual-style][data-home-design] main section#cotizar .lg\:col-span-5 h2>span:not(.official-word){color:#8bd5f5!important}
+html body[data-visual-style][data-home-design] main section#cotizar .lg\:col-span-5>div:first-child>p{color:#c6d8e7!important}
+html body[data-visual-style][data-home-design] main section#cotizar .lg\:col-span-5>div:first-child .bg-surface-container{background:#1e4664!important;color:#e1f2fc!important}
+html body[data-visual-style][data-home-design] main section :is(h2,h3) span.official-word{color:inherit!important}
+html body[data-visual-style][data-home-design] main section#beneficios h2{color:#fff!important}
+html body[data-visual-style][data-home-design] main section#beneficios h2>span:not(.official-word){color:#83d6ef!important}
+html body[data-visual-style][data-home-design] main section#beneficios .text-center h2{grid-column:1/-1;width:100%;justify-self:center;text-align:center}
+html body[data-visual-style][data-home-design] main section#faq.official-faq h2{color:#0b1220!important}
+html body[data-visual-style][data-home-design] main section#faq.official-faq h2>span{color:#00668a!important}
+html body[data-visual-style][data-home-design] main section#red-operaciones>div:nth-child(2)>div:first-child h2{color:#0b1220!important}
+html body[data-visual-style][data-home-design] main section#red-operaciones>div:nth-child(2)>div:first-child h2>span{color:#00668a!important}
+html body[data-visual-style][data-home-design] main .retained-design section#soluciones.home-solutions .home-section-head h2 em{color:#00668a!important}
+html body[data-visual-style][data-home-design] main .retained-design section#soporte.home-support h2 em{color:#00668a!important}
+html body[data-visual-style][data-home-design] main section#cotizar .lg\:col-span-5 h2{color:#fff!important}
+html body[data-visual-style][data-home-design] .official-nav :is(nav>a,.official-solutions-link,#official-dropdown a){color:#000!important}
+html body[data-visual-style][data-home-design] main section#cotizar{background:#fff!important;border-block:1px solid #dbe4f0}
+html body[data-visual-style][data-home-design] main section#cotizar .lg\:col-span-5 h2{color:#0b1220!important}
+html body[data-visual-style][data-home-design] main section#cotizar .lg\:col-span-5 h2>span:not(.official-word){color:#00668a!important}
+html body[data-visual-style][data-home-design] main section#cotizar .lg\:col-span-5>div:first-child>p,
+html body[data-visual-style][data-home-design] main section#cotizar .lg\:col-span-7>p,
+html body[data-visual-style][data-home-design] main section#cotizar .lg\:col-span-7>h3,
+html body[data-visual-style][data-home-design] main section#cotizar form label,
+html body[data-visual-style][data-home-design] main section#cotizar .official-contact-numbers a,
+html body[data-visual-style][data-home-design] main section#cotizar .lg\:col-span-5>div:last-child .text-outline,
+html body[data-visual-style][data-home-design] main section#cotizar .lg\:col-span-5 a{color:#000!important}
+html body[data-visual-style][data-home-design] main section#cotizar .lg\:col-span-5>div:first-child .bg-surface-container{background:#eef5ff!important;color:#000!important}
+html body[data-visual-style][data-home-design] main section#cotizar .lg\:col-span-5>div:last-child{background:#fff!important;border:1px solid #dbe4f0}
+html body[data-visual-style][data-home-design] main section#cotizar .lg\:col-span-7{background:#fff!important}
+html body[data-visual-style][data-home-design] main section#cotizar form :is(input,select,textarea){color:#000!important}
+html body[data-visual-style][data-home-design] main section#cotizar form :is(input,textarea)::placeholder{color:#000!important;opacity:1}
+html body[data-visual-style][data-home-design] main section#cotizar form button[type=submit]{color:#000!important}
+html body[data-visual-style][data-home-design] main #inicio .professional-text-link{background:#fff!important;padding-inline:16px;border-radius:8px}
+html body[data-visual-style][data-home-design] main :is(#red-operaciones,#cobertura,#soluciones,#soporte,#faq) h2{color:#0b1220!important}
+html body[data-visual-style][data-home-design] main :is(#red-operaciones,#cobertura,#soluciones,#soporte,#faq) h2 :is(span,em){color:#00668a!important}
+@media(max-width:1100px){body[data-home-design] .professional-wrap{width:calc(100% - 64px)}body[data-home-design] #inicio .professional-facts{gap:12px;font-size:11px}}
+@media(max-width:900px){body[data-home-design] #inicio.professional-hero{padding-top:130px}body[data-home-design] #inicio h1{font-size:52px!important}body[data-home-design] #inicio .professional-facts{grid-template-columns:repeat(4,1fr);row-gap:20px}body[data-home-design] #inicio .professional-facts>div:nth-child(5){padding-left:0;border-left:0}html body[data-visual-style][data-home-design] #beneficios .text-center{display:block!important}html body[data-visual-style][data-home-design] #beneficios .text-center>span{display:block;margin-bottom:16px}html body[data-visual-style][data-home-design] #beneficios .text-center>p{margin-top:20px!important}}
+@media(max-width:639px){body[data-home-design] .professional-wrap{width:calc(100% - 40px)}body[data-home-design] #inicio.professional-hero{min-height:auto;padding-top:120px}body[data-home-design] #inicio .professional-hero-content{padding-top:38px;padding-bottom:44px}body[data-home-design] #inicio h1{font-size:42px!important;line-height:1.1!important;max-width:100%}body[data-home-design] #inicio .professional-eyebrow{font-size:11px;letter-spacing:.08em;margin-bottom:22px}body[data-home-design] #inicio .professional-hero-lead{font-size:16px;margin-bottom:26px}body[data-home-design] #inicio .professional-capacity{gap:16px;margin-bottom:32px}body[data-home-design] #inicio .professional-capacity strong{font-size:37px}body[data-home-design] #inicio .professional-capacity>span{padding-left:16px;font-size:12px}body[data-home-design] #inicio .professional-hero-actions{gap:22px;flex-wrap:wrap}body[data-home-design] #inicio .professional-button{padding:14px 18px;font-size:13px}body[data-home-design] #inicio .professional-text-link{font-size:13px;gap:10px}body[data-home-design] #inicio .professional-facts{grid-template-columns:1fr 1fr;gap:18px;padding-block:24px 30px;font-size:12px}body[data-home-design] #inicio .professional-facts>div{padding-left:0;border:0}body[data-home-design] #inicio .professional-facts>div:last-child{grid-column:1/-1}}
+@media(prefers-reduced-motion:reduce){body[data-home-design] #inicio .professional-button,body[data-home-design] #inicio .professional-text-link{transition:none}body[data-home-design] #inicio .professional-button:hover,body[data-home-design] #inicio .professional-text-link:hover{transform:none}}
+
+/* Section headings follow the same ink + blue accent hierarchy as the contact section. */
+html body[data-visual-style][data-home-design] main section[id]:is(#red-operaciones,#cobertura,#beneficios,#soluciones,#soporte,#faq,#cotizar) h2{
+  color:#0b1220!important;
+  font-size:clamp(29px,2.7vw,36px)!important;
+  font-weight:700!important;
+  line-height:1.23!important;
+}
+html body[data-visual-style][data-home-design] main section[id]:is(#red-operaciones,#cobertura,#beneficios,#soluciones,#soporte,#faq,#cotizar) h2 :is(span,em):not(.official-word){color:#00668a!important}
+/* Keep the dark benefits band readable while preserving the shared accent. */
+html body[data-visual-style][data-home-design] main section#beneficios h2{color:#fff!important}
+html body[data-visual-style][data-home-design] main section#beneficios h2 :is(span,em):not(.official-word){color:#83d6ef!important}
+/* Solution catalog uses the same scale as every other section title. */
+html body[data-visual-style][data-home-design] main section#soluciones.home-solutions .home-section-head h2{font-size:clamp(29px,2.7vw,36px)!important}
+@media(max-width:639px){html body[data-visual-style][data-home-design] main section[id]:is(#red-operaciones,#cobertura,#beneficios,#soluciones,#soporte,#faq,#cotizar) h2{font-size:29px!important}}
+
+/* Requested black + sky-blue split. Match the homepage's specific legacy selectors to win the cascade. */
+html body[data-visual-style][data-home-design] main section#red-operaciones>div:nth-child(2)>div:first-child h2,
+html body[data-visual-style][data-home-design] main .retained-design section#cobertura.home-coverage .home-coverage-copy h2,
+html body[data-visual-style][data-home-design] main .retained-design section#soluciones.home-solutions .home-section-head h2,
+html body[data-visual-style][data-home-design] main .retained-design section#soporte.home-support .home-section-head h2,
+html body[data-visual-style][data-home-design] main section#faq.official-faq h2{color:#050505!important}
+html body[data-visual-style][data-home-design] main section#red-operaciones>div:nth-child(2)>div:first-child h2 *,
+html body[data-visual-style][data-home-design] main .retained-design section#cobertura.home-coverage .home-coverage-copy h2 *,
+html body[data-visual-style][data-home-design] main .retained-design section#soluciones.home-solutions .home-section-head h2 *,
+html body[data-visual-style][data-home-design] main .retained-design section#soporte.home-support .home-section-head h2 *,
+html body[data-visual-style][data-home-design] main section#faq.official-faq h2 *{color:#050505!important}
+html body[data-visual-style][data-home-design] main section#red-operaciones>div:nth-child(2)>div:first-child h2 .text-secondary,
+html body[data-visual-style][data-home-design] main section#red-operaciones>div:nth-child(2)>div:first-child h2 .text-secondary *,
+html body[data-visual-style][data-home-design] main .retained-design section#cobertura.home-coverage .home-coverage-copy h2 em,
+html body[data-visual-style][data-home-design] main .retained-design section#cobertura.home-coverage .home-coverage-copy h2 em *,
+html body[data-visual-style][data-home-design] main .retained-design section#soluciones.home-solutions .home-section-head h2 em,
+html body[data-visual-style][data-home-design] main .retained-design section#soluciones.home-solutions .home-section-head h2 em *,
+html body[data-visual-style][data-home-design] main .retained-design section#soporte.home-support .home-section-head h2 em,
+html body[data-visual-style][data-home-design] main .retained-design section#soporte.home-support .home-section-head h2 em *,
+html body[data-visual-style][data-home-design] main section#faq.official-faq h2>span:not(.official-word),
+html body[data-visual-style][data-home-design] main section#faq.official-faq h2>span:not(.official-word) *{color:#7ccdf0!important}
+/* Keep non-highlighted animated word spans black; the highlighted wrapper stays sky blue. */
+html body[data-visual-style][data-home-design] main section#red-operaciones>div:nth-child(2)>div:first-child h2>span:not(.text-secondary),
+html body[data-visual-style][data-home-design] main section#red-operaciones>div:nth-child(2)>div:first-child h2>span:not(.text-secondary) *,
+html body[data-visual-style][data-home-design] main section#faq.official-faq h2>span:not(.text-secondary),
+html body[data-visual-style][data-home-design] main section#faq.official-faq h2>span:not(.text-secondary) *{color:#050505!important}
+
+/* Final heading palette: black across the page, with the benefits band fully white. */
+html body[data-visual-style][data-home-design] main section:is(#red-operaciones#red-operaciones,#cobertura#cobertura,#soluciones#soluciones,#soporte#soporte,#faq#faq,#cotizar#cotizar) h2,
+html body[data-visual-style][data-home-design] main section:is(#red-operaciones#red-operaciones,#cobertura#cobertura,#soluciones#soluciones,#soporte#soporte,#faq#faq,#cotizar#cotizar) h2 *{color:#050505!important}
+html body[data-visual-style][data-home-design] main section#beneficios#beneficios h2,
+html body[data-visual-style][data-home-design] main section#beneficios#beneficios h2 *{color:#fff!important}
+
+/* Keep the hero photograph in view as the page scrolls, softened by translucent section surfaces. */
+html body[data-home-design][data-visual-style]{position:relative;isolation:isolate;background:transparent!important}
+html body[data-home-design][data-visual-style]::before{
+  content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background-image:linear-gradient(135deg,rgba(241,247,252,.34),rgba(231,241,249,.46)),url("../ISONet_Oficial/assets/hero-realista.webp");
+  background-position:center,center 45%;background-size:cover;background-repeat:no-repeat;
+}
+html body[data-home-design][data-visual-style] main section#red-operaciones{background:rgba(255,255,255,.84)!important}
+html body[data-home-design][data-visual-style] main .retained-design section#cobertura.home-coverage{background:rgba(244,247,251,.86)!important}
+html body[data-home-design][data-visual-style] main section#beneficios{background:rgba(9,27,45,.94)!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones.home-solutions{background:rgba(241,245,251,.87)!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soporte.home-support{background:rgba(238,244,251,.84)!important}
+html body[data-home-design][data-visual-style] main section#faq.official-faq{background:rgba(255,255,255,.9)!important}
+html body[data-home-design][data-visual-style] main section#cotizar{background:rgba(244,247,251,.9)!important}
+
+/* Stronger photographic presence with a deep-blue tint; light panels remain readable. */
+html body[data-home-design][data-visual-style]::before{
+  background-image:linear-gradient(125deg,rgba(4,24,43,.44),rgba(8,43,68,.28) 52%,rgba(4,27,48,.38)),url("../ISONet_Oficial/assets/hero-realista.webp");
+  background-position:center,center 45%;background-size:cover;background-repeat:no-repeat;
+}
+html body[data-home-design][data-visual-style] main section#red-operaciones{background:rgba(255,255,255,.72)!important}
+html body[data-home-design][data-visual-style] main .retained-design section#cobertura.home-coverage{background:rgba(244,247,251,.74)!important}
+html body[data-home-design][data-visual-style] main section#beneficios{background:rgba(9,27,45,.86)!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones.home-solutions{background:rgba(241,245,251,.72)!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soporte.home-support{background:rgba(238,244,251,.72)!important}
+html body[data-home-design][data-visual-style] main section#faq.official-faq{background:rgba(255,255,255,.82)!important}
+html body[data-home-design][data-visual-style] main section#cotizar{background:rgba(244,247,251,.8)!important}
+
+/* Match the reference treatment: one fixed, blue-toned hero photograph across the full page. */
+html body[data-home-design][data-visual-style]{background-color:#173d5b!important}
+html body[data-home-design][data-visual-style]::before{
+  background-image:linear-gradient(90deg,rgba(5,22,40,.88) 0%,rgba(9,37,59,.74) 42%,rgba(24,64,91,.54) 72%,rgba(10,38,59,.44) 100%),url("../ISONet_Oficial/assets/hero-realista.webp");
+  background-position:center,center 45%;background-size:cover,cover;background-repeat:no-repeat,no-repeat;
+}
+html body[data-home-design][data-visual-style] main #inicio.professional-hero{background:transparent!important}
+html body[data-home-design][data-visual-style] main #inicio .professional-eyebrow{color:#a5e7fb!important}
+html body[data-home-design][data-visual-style] main #inicio h1{color:#f6fbff!important}
+html body[data-home-design][data-visual-style] main #inicio .professional-hero-lead{color:#e4f1f8!important}
+html body[data-home-design][data-visual-style] main #inicio .professional-capacity strong{color:#91e2f5!important}
+html body[data-home-design][data-visual-style] main #inicio .professional-capacity>span{color:#eef7fc!important}
+html body[data-home-design][data-visual-style] main #inicio .professional-capacity b{color:#ffb77c!important}
+html body[data-home-design][data-visual-style] main #inicio .professional-text-link{background:transparent!important;color:#fff!important}
+html body[data-home-design][data-visual-style] main #inicio .professional-facts{background:rgba(5,24,40,.68)!important;color:#f0f7fc!important;border-color:#ffffff45!important}
+html body[data-home-design][data-visual-style] main section#red-operaciones{background:rgba(244,248,251,.82)!important}
+html body[data-home-design][data-visual-style] main .retained-design section#cobertura.home-coverage{background:rgba(239,245,250,.78)!important}
+html body[data-home-design][data-visual-style] main section#beneficios{background:rgba(4,18,32,.88)!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones.home-solutions{background:rgba(241,246,251,.8)!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soporte.home-support{background:rgba(238,245,250,.8)!important}
+html body[data-home-design][data-visual-style] main section#faq.official-faq{background:rgba(247,250,253,.84)!important}
+html body[data-home-design][data-visual-style] main section#cotizar{background:rgba(239,245,250,.84)!important}
+/* White hero headline matches the reference and stays legible over the blue overlay. */
+html body[data-home-design][data-visual-style] main #inicio.professional-hero h1,
+html body[data-home-design][data-visual-style] main #inicio.professional-hero h1 *{color:#f6fbff!important}
+
+/* Full-page photo treatment: remove pale section veils and use deep-blue glass instead. */
+html body[data-home-design][data-visual-style]::before{
+  background-image:linear-gradient(90deg,rgba(7,29,53,.90) 0%,rgba(16,52,79,.76) 42%,rgba(32,77,107,.54) 74%,rgba(23,61,91,.46) 100%),url("../ISONet_Oficial/assets/hero-realista.webp");
+  background-position:center,center 45%;background-size:cover,cover;background-repeat:no-repeat,no-repeat;
+}
+html body[data-home-design][data-visual-style] main #inicio.professional-hero{background:transparent!important}
+html body[data-home-design][data-visual-style] main section#red-operaciones#red-operaciones{background:rgba(5,27,46,.46)!important;border-color:#a9d7ef3d!important}
+html body[data-home-design][data-visual-style] main .retained-design section#cobertura#cobertura{background:rgba(5,27,46,.42)!important;border-color:#a9d7ef3d!important}
+html body[data-home-design][data-visual-style] main section#beneficios#beneficios{background:rgba(3,17,31,.66)!important;border-color:#a9d7ef3d!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones{background:rgba(5,27,46,.44)!important;border-color:#a9d7ef3d!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soporte#soporte{background:rgba(5,27,46,.42)!important;border-color:#a9d7ef3d!important}
+html body[data-home-design][data-visual-style] main section#faq#faq{background:rgba(5,27,46,.44)!important;border-color:#a9d7ef3d!important}
+html body[data-home-design][data-visual-style] main section#cotizar#cotizar{background:rgba(5,27,46,.5)!important;border-color:#a9d7ef3d!important}
+html body[data-home-design][data-visual-style] main .official-partners-section{background:rgba(3,17,31,.64)!important;border-color:#a9d7ef3d!important}
+html body[data-home-design][data-visual-style] .official-fiber-slogan{background:rgba(3,17,31,.58)!important;border-color:#a9d7ef3d!important}
+html body[data-home-design][data-visual-style] footer{background:rgba(3,17,31,.84)!important;border-color:#a9d7ef3d!important}
+/* White/cyan section typography stays legible over the shared dark photo background. */
+html body[data-home-design][data-visual-style] main section:is(#red-operaciones#red-operaciones,#cobertura#cobertura,#soluciones#soluciones,#soporte#soporte,#faq#faq,#cotizar#cotizar) h2,
+html body[data-home-design][data-visual-style] main section:is(#red-operaciones#red-operaciones,#cobertura#cobertura,#soluciones#soluciones,#soporte#soporte,#faq#faq,#cotizar#cotizar) h2 *{color:#f6fbff!important}
+html body[data-home-design][data-visual-style] main section:is(#red-operaciones#red-operaciones,#cobertura#cobertura,#soluciones#soluciones,#soporte#soporte,#faq#faq,#cotizar#cotizar) h2 :is(span,em){color:#8bdcf3!important}
+html body[data-home-design][data-visual-style] main section#beneficios#beneficios h2,
+html body[data-home-design][data-visual-style] main section#beneficios#beneficios h2 *{color:#fff!important}
+html body[data-home-design][data-visual-style] main .retained-design section#cobertura .home-kicker,
+html body[data-home-design][data-visual-style] main .retained-design section#cobertura .home-coverage-copy>p,
+html body[data-home-design][data-visual-style] main .retained-design section#cobertura .home-coverage-facts span,
+html body[data-home-design][data-visual-style] main .retained-design section#cobertura .home-cities{color:#d7eaf4!important}
+html body[data-home-design][data-visual-style] main .retained-design section#cobertura .home-coverage-facts strong{color:#91e2f5!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soporte .home-support-steps :is(h3,p),
+html body[data-home-design][data-visual-style] main .retained-design section#soporte .home-section-head>p{color:#e0edf5!important}
+html body[data-home-design][data-visual-style] main section#faq .official-section-heading>p{color:#d7eaf4!important}
+html body[data-home-design][data-visual-style] main section#cotizar .lg\:col-span-5 h2,
+html body[data-home-design][data-visual-style] main section#cotizar .lg\:col-span-5 h2 *{color:#f6fbff!important}
+html body[data-home-design][data-visual-style] main section#cotizar .lg\:col-span-5>div:first-child>p{color:#d7eaf4!important}
+/* Keep the map field in the same blue atmosphere; remove its former white halo. */
+html body[data-home-design][data-visual-style] main .retained-design section#cobertura .home-map{background:radial-gradient(ellipse,rgba(59,161,199,.16),transparent 70%)!important}
+/* Limit cyan to the intentionally emphasized phrase in each heading. */
+html body[data-home-design][data-visual-style] main section:is(#red-operaciones#red-operaciones,#faq#faq) h2 .text-secondary,
+html body[data-home-design][data-visual-style] main section:is(#red-operaciones#red-operaciones,#faq#faq) h2 .text-secondary *,
+html body[data-home-design][data-visual-style] main section:is(#cobertura#cobertura,#soluciones#soluciones,#soporte#soporte) h2 em,
+html body[data-home-design][data-visual-style] main section:is(#cobertura#cobertura,#soluciones#soluciones,#soporte#soporte) h2 em *,
+html body[data-home-design][data-visual-style] main section#cotizar#cotizar h2 .text-secondary,
+html body[data-home-design][data-visual-style] main section#cotizar#cotizar h2 .text-secondary *{color:#8bdcf3!important}
+/* Keep only the emphasized phrase cyan; non-highlighted animated words stay white. */
+html body[data-home-design][data-visual-style] main section:is(#red-operaciones#red-operaciones,#cobertura#cobertura,#soluciones#soluciones,#soporte#soporte,#faq#faq,#cotizar#cotizar) h2>span.official-word{color:#f6fbff!important}
+html body[data-home-design][data-visual-style] main section:is(#red-operaciones#red-operaciones,#cobertura#cobertura,#soluciones#soluciones,#soporte#soporte,#faq#faq,#cotizar#cotizar) h2>span.text-secondary,
+html body[data-home-design][data-visual-style] main section:is(#red-operaciones#red-operaciones,#cobertura#cobertura,#soluciones#soluciones,#soporte#soporte,#faq#faq,#cotizar#cotizar) h2>span.text-secondary *,
+html body[data-home-design][data-visual-style] main section:is(#red-operaciones#red-operaciones,#cobertura#cobertura,#soluciones#soluciones,#soporte#soporte,#faq#faq,#cotizar#cotizar) h2>em,
+html body[data-home-design][data-visual-style] main section:is(#red-operaciones#red-operaciones,#cobertura#cobertura,#soluciones#soluciones,#soporte#soporte,#faq#faq,#cotizar#cotizar) h2>em *{color:#8bdcf3!important}
+/* Use the reference's deeper blue overlay so bright areas of the photo do not read as a white veil. */
+html body[data-home-design][data-visual-style]::before{background-image:linear-gradient(90deg,#071d35f5 0%,#10344fe8 38%,#204d6bba 75%,#173d5b9c 100%),url("../ISONet_Oficial/assets/hero-realista.webp");background-position:center,center 45%;background-size:cover,cover;background-repeat:no-repeat,no-repeat}
+/* Lighter blue veil across the fixed photo; retain the brand tint without washing it out. */
+html body[data-home-design][data-visual-style]::before{background-image:linear-gradient(90deg,rgba(7,29,53,.78) 0%,rgba(16,52,79,.65) 38%,rgba(32,77,107,.43) 75%,rgba(23,61,91,.32) 100%),url("../ISONet_Oficial/assets/hero-realista.webp");background-position:center,center 45%;background-size:cover,cover;background-repeat:no-repeat,no-repeat}
+
+/* Dark photo theme refinements requested for the main page. */
+html body[data-home-design][data-visual-style] main section:is(#red-operaciones#red-operaciones,#cobertura#cobertura,#beneficios#beneficios,#soluciones#soluciones,#soporte#soporte,#faq#faq,#cotizar#cotizar) h2,
+html body[data-home-design][data-visual-style] main section:is(#red-operaciones#red-operaciones,#cobertura#cobertura,#beneficios#beneficios,#soluciones#soluciones,#soporte#soporte,#faq#faq,#cotizar#cotizar) h2 *{color:#fff!important}
+html body[data-home-design][data-visual-style] .official-fiber-slogan h2,
+html body[data-home-design][data-visual-style] .official-fiber-slogan h2 *{color:#fff!important}
+/* Topology diagram: replace the large white plate and white node cards with navy glass. */
+html body[data-home-design][data-visual-style] main section#red-operaciones#red-operaciones .backdrop-blur-2xl{background:rgba(7,31,51,.60)!important;border:1px solid #9bd6ef55!important;box-shadow:0 18px 48px #03132266!important;backdrop-filter:blur(14px)}
+html body[data-home-design][data-visual-style] main section#red-operaciones#red-operaciones .backdrop-blur-2xl .bg-surface-container-lowest{background:rgba(13,47,70,.86)!important;border-color:#91cde344!important;box-shadow:0 8px 24px #03132244!important}
+html body[data-home-design][data-visual-style] main section#red-operaciones#red-operaciones .backdrop-blur-2xl .bg-surface-container-low{background:rgba(84,157,188,.18)!important;border-color:#91cde344!important}
+html body[data-home-design][data-visual-style] main section#red-operaciones#red-operaciones .backdrop-blur-2xl :is(.text-primary,.text-on-surface,.text-on-surface-variant){color:#e8f5fb!important}
+html body[data-home-design][data-visual-style] main section#red-operaciones#red-operaciones .backdrop-blur-2xl :is(.text-secondary,.text-on-tertiary-container){color:#8bdcf3!important}
+/* Support steps read clearly on the photo; numbering uses the brand cyan. */
+html body[data-home-design][data-visual-style] main .retained-design section#soporte#soporte .home-support-steps :is(h3,p){color:#f3f8fc!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soporte#soporte .home-support-steps li>span{color:#8bdcf3!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soporte#soporte a.home-link{background:transparent!important;color:#fff!important;text-decoration:none!important;transition:transform 180ms cubic-bezier(.23,1,.32,1),color 180ms ease,opacity 180ms ease}
+html body[data-home-design][data-visual-style] main .retained-design section#soporte#soporte a.home-link:hover{color:#fff!important;text-decoration:none!important;transform:translateY(-2px);opacity:.82}
+html body[data-home-design][data-visual-style] main .retained-design section#soporte#soporte a.home-link:active{transform:translateY(0) scale(.98)}
+html body[data-home-design][data-visual-style] main .retained-design section#soporte#soporte a.home-link:focus-visible{text-decoration:none!important}
+/* FAQ intro uses the same soft white copy color as the other dark sections. */
+html body[data-home-design][data-visual-style] main section#faq#faq .official-section-heading>p{color:#d7eaf4!important}
+/* Contact details float directly on the dark photo; keep the form card intact. */
+html body[data-home-design][data-visual-style] main section#cotizar#cotizar .lg\:col-span-5>div:last-child{background:transparent!important;border:0!important;box-shadow:none!important;padding:0!important}
+html body[data-home-design][data-visual-style] main section#cotizar#cotizar .lg\:col-span-5>div:last-child .w-9.h-9{background:transparent!important;border:0!important;box-shadow:none!important;color:#8bdcf3!important}
+html body[data-home-design][data-visual-style] main section#cotizar#cotizar .lg\:col-span-5>div:last-child :is(.text-outline,.official-contact-numbers a,a[href^="mailto:"]){color:#eef7fb!important}
+html body[data-home-design][data-visual-style] main section#cotizar#cotizar .lg\:col-span-5>div:last-child .material-symbols-outlined{color:#8bdcf3!important}
+/* Override the previous cyan word-highlight rules: every section title is now pure white. */
+html body[data-home-design][data-visual-style] main section:is(#red-operaciones#red-operaciones,#cobertura#cobertura,#beneficios#beneficios,#soluciones#soluciones,#soporte#soporte,#faq#faq,#cotizar#cotizar) h2>span.official-word,
+html body[data-home-design][data-visual-style] main section:is(#red-operaciones#red-operaciones,#cobertura#cobertura,#beneficios#beneficios,#soluciones#soluciones,#soporte#soporte,#faq#faq,#cotizar#cotizar) h2>span.text-secondary,
+html body[data-home-design][data-visual-style] main section:is(#red-operaciones#red-operaciones,#cobertura#cobertura,#beneficios#beneficios,#soluciones#soluciones,#soporte#soporte,#faq#faq,#cotizar#cotizar) h2>span.text-secondary *,
+html body[data-home-design][data-visual-style] main section:is(#red-operaciones#red-operaciones,#cobertura#cobertura,#beneficios#beneficios,#soluciones#soluciones,#soporte#soporte,#faq#faq,#cotizar#cotizar) h2>em,
+html body[data-home-design][data-visual-style] main section:is(#red-operaciones#red-operaciones,#cobertura#cobertura,#beneficios#beneficios,#soluciones#soluciones,#soporte#soporte,#faq#faq,#cotizar#cotizar) h2>em *{color:#fff!important}
+html body[data-home-design][data-visual-style] .official-fiber-slogan h2 :is(span,em),
+html body[data-home-design][data-visual-style] .official-fiber-slogan h2 :is(span,em) *{color:#fff!important}
+/* The highlighted ISONet core node also drops its pale plate for the dark glass treatment. */
+html body[data-home-design][data-visual-style] main section#red-operaciones#red-operaciones .backdrop-blur-2xl .bg-surface-container-high\/90{background:rgba(13,47,70,.92)!important;border-color:#91cde377!important;color:#e8f5fb!important;box-shadow:0 8px 24px #03132244!important}
+/* Topology diagram: keep its layout and labels, but let its nodes float on the page photo. */
+html body[data-home-design][data-visual-style] main section#red-operaciones#red-operaciones .backdrop-blur-2xl{background:transparent!important;border-color:transparent!important;box-shadow:none!important;backdrop-filter:none!important}
+html body[data-home-design][data-visual-style] main section#red-operaciones#red-operaciones .backdrop-blur-2xl .bg-surface-container-lowest,
+html body[data-home-design][data-visual-style] main section#red-operaciones#red-operaciones .backdrop-blur-2xl .bg-surface-container-high\/90{background:transparent!important;border-color:transparent!important;box-shadow:none!important}
+html body[data-home-design][data-visual-style] main section#red-operaciones#red-operaciones .backdrop-blur-2xl .bg-surface-container-low{background:transparent!important;border-color:transparent!important;box-shadow:none!important}
+
+/* Glass surfaces aligned to the continuous blue photo background. */
+html body[data-home-design][data-visual-style] main section#red-operaciones#red-operaciones .backdrop-blur-2xl>.flex.flex-col.lg\:flex-row>.rounded-2xl{
+ background:rgba(10,43,66,.34)!important;border:1px solid #b7dfef48!important;border-radius:18px!important;
+ box-shadow:inset 0 1px 0 #ffffff12,0 10px 30px #03132228!important;
+ backdrop-filter:blur(14px) saturate(125%);-webkit-backdrop-filter:blur(14px) saturate(125%);
+}
+html body[data-home-design][data-visual-style] main section#red-operaciones#red-operaciones .backdrop-blur-2xl .material-symbols-outlined{color:#fff!important}
+/* Solution cards: photographic header with translucent blue-glass content. */
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service{
+ background:rgba(8,34,54,.42)!important;border:1px solid #b8dfef55!important;
+ box-shadow:inset 0 1px 0 #ffffff12,0 14px 34px #03132235!important;
+ backdrop-filter:blur(14px) saturate(125%);-webkit-backdrop-filter:blur(14px) saturate(125%);
+}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service-content{
+ background:rgba(8,34,54,.46)!important;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service h3{color:#fff!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service :is(p,ul){color:#e0edf5!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service-title svg{color:#8bdcf3!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-details{color:#a5e7fb!important;border-color:#c6e6f238!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-details>span{color:#ffb566!important}
+/* FAQ cards become frosted navy glass with readable white copy. */
+html body[data-home-design][data-visual-style] main section#faq#faq .official-questions details{
+ background:rgba(12,45,68,.46)!important;border:1px solid #b8dfef55!important;border-radius:14px!important;
+ box-shadow:inset 0 1px 0 #ffffff12,0 10px 28px #03132224!important;
+ backdrop-filter:blur(14px) saturate(125%);-webkit-backdrop-filter:blur(14px) saturate(125%);
+}
+html body[data-home-design][data-visual-style] main section#faq#faq .official-questions summary{color:#f6fbff!important}
+html body[data-home-design][data-visual-style] main section#faq#faq .official-answer{color:#dbeaf2!important}
+html body[data-home-design][data-visual-style] main section#faq#faq .official-questions summary:after{color:#8bdcf3!important}
+/* Contact form: frosted blue glass, with fields and labels tuned for contrast. */
+html body[data-home-design][data-visual-style] main section#cotizar#cotizar .lg\:col-span-7{
+ background:rgba(10,42,64,.52)!important;border:1px solid #b8dfef66!important;border-radius:18px!important;
+ box-shadow:inset 0 1px 0 #ffffff15,0 18px 42px #03132238!important;
+ backdrop-filter:blur(16px) saturate(130%);-webkit-backdrop-filter:blur(16px) saturate(130%);
+}
+html body[data-home-design][data-visual-style] main section#cotizar#cotizar .lg\:col-span-7 :is(h3,p,label){color:#f1f8fc!important}
+html body[data-home-design][data-visual-style] main section#cotizar#cotizar .lg\:col-span-7 form :is(input,select,textarea){
+ background:rgba(223,241,250,.11)!important;border:1px solid #d2eaf55c!important;border-radius:9px!important;color:#fff!important;
+}
+html body[data-home-design][data-visual-style] main section#cotizar#cotizar .lg\:col-span-7 form :is(input,textarea)::placeholder{color:#c6dbe7!important;opacity:1}
+html body[data-home-design][data-visual-style] main section#cotizar#cotizar .lg\:col-span-7 form select option{background:#12334a;color:#fff}
+
+/* White frosted glass for solution cards, keeping dark copy for contrast. */
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service{
+ background:rgba(255,255,255,.72)!important;border:1px solid #ffffffc9!important;
+ box-shadow:inset 0 1px 0 #ffffffd9,0 14px 34px #061b2b36!important;
+ backdrop-filter:blur(14px) saturate(125%);-webkit-backdrop-filter:blur(14px) saturate(125%);
+}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service-content{
+ background:rgba(255,255,255,.58)!important;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service h3{color:#102f49!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service :is(p,ul){color:#405b70!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service-title svg{color:#087aa4!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-details{color:#076c96!important;border-color:#173d5d26!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-details>span{color:#c55b12!important}
+/* Contact form keeps its original pearl-white surface, now with frosted translucency. */
+html body[data-home-design][data-visual-style] main section#cotizar#cotizar .lg\:col-span-7{
+ background:rgba(255,255,255,.78)!important;border:1px solid #ffffffd9!important;border-radius:18px!important;
+ box-shadow:inset 0 1px 0 #ffffffeb,0 18px 42px #03132235!important;
+ backdrop-filter:blur(16px) saturate(130%);-webkit-backdrop-filter:blur(16px) saturate(130%);
+}
+html body[data-home-design][data-visual-style] main section#cotizar#cotizar .lg\:col-span-7 :is(h3,p,label){color:#17364d!important}
+html body[data-home-design][data-visual-style] main section#cotizar#cotizar .lg\:col-span-7 form :is(input,select,textarea){
+ background:rgba(255,255,255,.76)!important;border:1px solid #8caabc88!important;border-radius:9px!important;color:#102f49!important;
+}
+html body[data-home-design][data-visual-style] main section#cotizar#cotizar .lg\:col-span-7 form :is(input,textarea)::placeholder{color:#587184!important;opacity:1}
+html body[data-home-design][data-visual-style] main section#cotizar#cotizar .lg\:col-span-7 form select option{background:#fff;color:#102f49}
+
+/* Final homepage catalog alignment and full-width nav state. */
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-section-head{
+ display:block!important;text-align:left!important;margin:0 0 34px!important;max-width:720px;
+}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-section-head h2{text-align:left!important;margin:0!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-section-head>p{
+ max-width:650px;margin:14px 0 0!important;color:#405b70!important;font-size:15px;line-height:1.7;
+}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-services{
+ grid-template-columns:repeat(6,minmax(0,1fr))!important;gap:22px!important;
+}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service{grid-column:span 2!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service:nth-child(4){grid-column:2 / span 2!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service:nth-child(5){grid-column:4 / span 2!important}
+@media(max-width:900px){
+ html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-services{grid-template-columns:repeat(4,minmax(0,1fr))!important}
+ html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service{grid-column:span 2!important}
+ html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service:nth-child(5){grid-column:2 / span 2!important}
+}
+@media(max-width:600px){
+ html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-services{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service{grid-column:span 2!important}
+}
+
+/* Full-width navigation bar with a subtle frosted state when scrolling. */
+html body[data-home-design][data-visual-style] .official-header{position:fixed!important;inset:0 0 auto!important;width:100%!important;z-index:100}
+html body[data-home-design][data-visual-style] .official-nav{
+ width:100%!important;max-width:none!important;min-height:82px!important;margin:0!important;
+ padding:8px clamp(20px,4vw,64px)!important;border:0!important;border-bottom:1px solid #102f4918!important;
+ border-radius:0!important;background:rgba(250,252,254,.97)!important;box-shadow:0 4px 18px #061b2b0c!important;
+ backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+ transition:background 220ms ease,backdrop-filter 220ms ease,box-shadow 220ms ease,border-color 220ms ease;
+}
+html body[data-home-design][data-visual-style] .official-nav .official-brand{margin-right:clamp(24px,5vw,84px)}
+html body[data-home-design][data-visual-style] .official-nav nav{justify-content:center;gap:clamp(18px,2.8vw,40px)}
+html body[data-home-design][data-visual-style] .official-nav .official-quote{margin-left:clamp(18px,3vw,42px)}
+html body[data-home-design][data-visual-style].header-is-scrolled .official-nav{
+ background:rgba(244,249,252,.78)!important;border-bottom-color:#ffffff70!important;
+ box-shadow:0 8px 26px #061b2b18!important;backdrop-filter:blur(18px) saturate(135%);-webkit-backdrop-filter:blur(18px) saturate(135%);
+}
+@media(max-width:900px){
+ html body[data-home-design][data-visual-style] .official-nav{min-height:74px!important;padding-inline:16px!important}
+ html body[data-home-design][data-visual-style] .official-nav .official-brand{margin-right:auto}
+ html body[data-home-design][data-visual-style] .official-nav .official-quote{margin-left:0}
+}
+
+/* Solutions catalog: clean three-column cards inspired by the supplied reference. */
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-services{
+ display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:22px!important;
+}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service{
+ grid-column:auto!important;order:initial;display:flex!important;flex-direction:column!important;
+ background:rgba(255,255,255,.96)!important;border:1px solid #d8e3ec!important;border-radius:16px!important;
+ box-shadow:0 2px 4px #0a294412,0 10px 24px #0a29440a!important;
+ color:#122e46!important;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+ transition:transform 200ms ease,border-color 200ms ease,box-shadow 200ms ease;
+}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service:nth-child(1){order:1}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service:nth-child(2){order:3}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service:nth-child(3){order:2}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service:nth-child(4){order:4}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service:nth-child(5){order:5}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service-photo{display:none!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service-content{
+ flex:1;padding:26px!important;background:transparent!important;backdrop-filter:none!important;
+}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service-title{align-items:center;gap:14px;margin-bottom:16px}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service-title svg{
+ width:27px;height:27px;padding:0!important;margin:0;color:#087fc0!important;background:transparent!important;
+ border:0!important;border-radius:0!important;box-shadow:none!important;flex:none;
+}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service h3{
+ color:#102b43!important;font-size:20px;line-height:1.3;margin:0;
+}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service p{
+ color:#435f76!important;font-size:14px;line-height:1.65;margin:0 0 12px;
+}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service ul{
+ color:#435f76!important;font-size:12px;line-height:1.6;gap:4px;margin:4px 0 18px;
+}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-details{
+ border:0!important;padding-top:8px;margin-top:auto;color:#0069bd!important;justify-content:flex-start;gap:10px;
+}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-details>span{color:#0069bd!important;font-size:18px}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service:hover{
+ transform:translateY(-3px);border-color:#b8d3e6!important;box-shadow:0 12px 28px #0a29441c!important;
+}
+/* The consultation tile keeps a distinct pale-blue call-to-action treatment. */
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-solution-cta{
+ order:6;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;min-height:250px;
+ padding:26px;border:1px solid #d5e6fa;border-radius:16px;background:#edf5ff;color:#102b43;
+}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-solution-cta h3{margin:0 0 12px;font-size:20px;line-height:1.35;color:#102b43}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-solution-cta p{margin:0 0 22px;color:#365a7b;font-size:14px;line-height:1.6}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-solution-cta>a{
+ display:flex;align-items:center;justify-content:center;gap:12px;width:100%;padding:13px 18px;border-radius:999px;
+ background:#f7940a;color:#102235;text-decoration:none;font-size:14px;font-weight:700;transition:background 180ms ease,transform 180ms ease;
+}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-solution-cta>a:hover{background:#ffab28;transform:translateY(-1px)}
+@media(max-width:900px){html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-services{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:600px){html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-services{grid-template-columns:1fr!important}}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones :is(.home-service,.home-solution-cta){order:initial!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service-title{flex-direction:column;align-items:flex-start;gap:18px}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service-title svg{width:28px;height:28px}
+
+/* Five solution cards: three on the first row and two centered beneath. */
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-section-head{
+ display:block!important;text-align:left!important;margin:0 0 34px!important;max-width:720px;
+}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-section-head h2{
+ text-align:left!important;margin:0!important;
+}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-section-head>p{
+ max-width:650px;margin:14px 0 0!important;color:#405b70!important;font-size:15px;line-height:1.7;
+}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-services{
+ grid-template-columns:repeat(6,minmax(0,1fr))!important;gap:22px!important;
+}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service{grid-column:span 2!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service:nth-child(4){grid-column:2 / span 2!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service:nth-child(5){grid-column:4 / span 2!important}
+@media(max-width:900px){
+ html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-services{grid-template-columns:repeat(4,minmax(0,1fr))!important}
+ html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service{grid-column:span 2!important}
+ html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service:nth-child(4),
+ html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service:nth-child(5){grid-column:span 2!important}
+}
+
+/* Full-width navigation with a subtle translucent state after scrolling. */
+html body[data-home-design][data-visual-style] .official-header{
+ position:fixed!important;inset:0 0 auto!important;width:100%!important;z-index:100;
+}
+html body[data-home-design][data-visual-style] .official-nav{
+ width:100%!important;max-width:none!important;min-height:82px!important;margin:0!important;
+ padding:8px clamp(20px,4vw,64px)!important;border:0!important;border-bottom:1px solid #102f4918!important;
+ border-radius:0!important;background:rgba(250,252,254,.97)!important;box-shadow:0 4px 18px #061b2b0c!important;
+ backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+ transition:background 220ms ease,backdrop-filter 220ms ease,box-shadow 220ms ease,border-color 220ms ease;
+}
+html body[data-home-design][data-visual-style] .official-nav .official-brand{margin-right:clamp(24px,5vw,84px)}
+html body[data-home-design][data-visual-style] .official-nav nav{justify-content:center;gap:clamp(18px,2.8vw,40px)}
+html body[data-home-design][data-visual-style] .official-nav .official-quote{margin-left:clamp(18px,3vw,42px)}
+html body[data-home-design][data-visual-style] body.header-is-scrolled .official-nav{
+ background:rgba(244,249,252,.78)!important;border-bottom-color:#ffffff70!important;
+ box-shadow:0 8px 26px #061b2b18!important;backdrop-filter:blur(18px) saturate(135%);-webkit-backdrop-filter:blur(18px) saturate(135%);
+}
+@media(max-width:900px){
+ html body[data-home-design][data-visual-style] .official-nav{min-height:74px!important;padding-inline:16px!important}
+ html body[data-home-design][data-visual-style] .official-nav .official-brand{margin-right:auto}
+ html body[data-home-design][data-visual-style] .official-nav .official-quote{margin-left:0}
+}
+@media(max-width:600px){html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-services{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+
+/* Return solutions and the form to subdued dark glass, with less saturated blue. */
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service{
+ background:rgba(28,43,55,.58)!important;border:1px solid #d7e6ed55!important;
+ box-shadow:inset 0 1px 0 #ffffff12,0 14px 34px #03132238!important;
+ backdrop-filter:blur(14px) saturate(112%);-webkit-backdrop-filter:blur(14px) saturate(112%);
+}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service-content{
+ background:rgba(26,42,54,.42)!important;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+}
+html body[data-home-design][data-visual-style] main section#cotizar#cotizar .lg\:col-span-7{
+ background:rgba(30,45,57,.64)!important;border:1px solid #d7e6ed66!important;border-radius:18px!important;
+ box-shadow:inset 0 1px 0 #ffffff15,0 18px 42px #0313223f!important;
+ backdrop-filter:blur(16px) saturate(115%);-webkit-backdrop-filter:blur(16px) saturate(115%);
+}
+html body[data-home-design][data-visual-style] main section#cotizar#cotizar .lg\:col-span-7 :is(h3,p,label){color:#f2f7fa!important}
+html body[data-home-design][data-visual-style] main section#cotizar#cotizar .lg\:col-span-7 form :is(input,select,textarea){
+ background:rgba(231,240,245,.14)!important;border:1px solid #dce9ef66!important;color:#fff!important;
+}
+html body[data-home-design][data-visual-style] main section#cotizar#cotizar .lg\:col-span-7 form :is(input,textarea)::placeholder{color:#d0dce3!important;opacity:1}
+html body[data-home-design][data-visual-style] main section#cotizar#cotizar .lg\:col-span-7 form select option{background:#253b4b;color:#fff}
+/* Ensure solution copy contrasts with the restored neutral dark glass. */
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service-content{background:rgba(24,42,54,.54)!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service h3{color:#f4f8fa!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service :is(p,ul){color:#dce6ec!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service-title svg{color:#8bdcf3!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-details{color:#a9e5f5!important;border-color:#d9e8ef38!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-details>span{color:#ffb566!important}
+
+/* Solution icons float directly on the glass card without a white tile. */
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service-title svg{
+ background:transparent!important;border:0!important;box-shadow:none!important;padding:0!important;border-radius:0!important;
+ color:#8bdcf3!important;
+}
+/* Restore the pearl-white translucent contact form surface. */
+html body[data-home-design][data-visual-style] main section#cotizar#cotizar .lg\:col-span-7{
+ background:rgba(255,255,255,.82)!important;border:1px solid #ffffffd9!important;border-radius:18px!important;
+ box-shadow:inset 0 1px 0 #ffffffeb,0 18px 42px #03132235!important;
+ backdrop-filter:blur(16px) saturate(130%);-webkit-backdrop-filter:blur(16px) saturate(130%);
+}
+html body[data-home-design][data-visual-style] main section#cotizar#cotizar .lg\:col-span-7 :is(h3,p,label){color:#17364d!important}
+html body[data-home-design][data-visual-style] main section#cotizar#cotizar .lg\:col-span-7 form :is(input,select,textarea){
+ background:rgba(255,255,255,.82)!important;border:1px solid #8caabc88!important;border-radius:9px!important;color:#102f49!important;
+}
+html body[data-home-design][data-visual-style] main section#cotizar#cotizar .lg\:col-span-7 form :is(input,textarea)::placeholder{color:#587184!important;opacity:1}
+html body[data-home-design][data-visual-style] main section#cotizar#cotizar .lg\:col-span-7 form select option{background:#fff;color:#102f49}
+
+/* Final overrides for the requested catalog and navigation layout. */
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-section-head{display:block!important;text-align:left!important;margin:0 0 34px!important;max-width:720px}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-section-head h2{text-align:left!important;margin:0!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-section-head>p{max-width:650px;margin:14px 0 0!important;color:#405b70!important;font-size:15px;line-height:1.7}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-services{display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr))!important;gap:22px!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service{grid-column:span 2!important;display:flex!important;flex-direction:column!important;background:rgba(255,255,255,.96)!important;border:1px solid #d8e3ec!important;border-radius:16px!important;box-shadow:0 2px 4px #0a294412,0 10px 24px #0a29440a!important;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service:nth-child(4){grid-column:2 / span 2!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service:nth-child(5){grid-column:4 / span 2!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service-photo{display:none!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service-content{flex:1;padding:26px!important;background:transparent!important;backdrop-filter:none!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service-title{display:flex;flex-direction:column;align-items:flex-start;gap:18px;margin-bottom:16px}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service-title svg{width:28px;height:28px;padding:0!important;margin:0;background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;color:#087fc0!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service h3{color:#102b43!important;font-size:20px;line-height:1.3;margin:0}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service p,html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service ul{color:#435f76!important;font-size:14px;line-height:1.65}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-details{border:0!important;padding-top:8px;margin-top:auto;color:#0069bd!important;justify-content:flex-start;gap:10px}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-details>span{color:#0069bd!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-solution-cta{display:none!important}
+@media(max-width:900px){
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-services{grid-template-columns:repeat(4,minmax(0,1fr))!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service{grid-column:span 2!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service:nth-child(5){grid-column:2 / span 2!important}
+}
+@media(max-width:600px){
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-services{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service{grid-column:span 2!important}
+}
+html body[data-home-design][data-visual-style] .official-header{position:fixed!important;inset:0 0 auto!important;width:100%!important;z-index:100}
+html body[data-home-design][data-visual-style] .official-nav{width:100%!important;max-width:none!important;min-height:82px!important;margin:0!important;padding:8px clamp(20px,4vw,64px)!important;border:0!important;border-bottom:1px solid #102f4918!important;border-radius:0!important;background:rgba(250,252,254,.97)!important;box-shadow:0 4px 18px #061b2b0c!important;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);transition:background 220ms ease,backdrop-filter 220ms ease,box-shadow 220ms ease,border-color 220ms ease}
+html body[data-home-design][data-visual-style] .official-nav .official-brand{margin-right:clamp(24px,5vw,84px)}
+html body[data-home-design][data-visual-style] .official-nav nav{justify-content:center;gap:clamp(18px,2.8vw,40px)}
+html body[data-home-design][data-visual-style] .official-nav .official-quote{margin-left:clamp(18px,3vw,42px)}
+html body[data-home-design][data-visual-style].header-is-scrolled .official-nav{background:rgba(244,249,252,.78)!important;border-bottom-color:#ffffff70!important;box-shadow:0 8px 26px #061b2b18!important;backdrop-filter:blur(18px) saturate(135%);-webkit-backdrop-filter:blur(18px) saturate(135%)}
+@media(max-width:900px){html body[data-home-design][data-visual-style] .official-nav{min-height:74px!important;padding-inline:16px!important}html body[data-home-design][data-visual-style] .official-nav .official-brand{margin-right:auto}html body[data-home-design][data-visual-style] .official-nav .official-quote{margin-left:0}}
+/* Improve contrast of the catalog introduction and bring logo and quote inward. */
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-section-head>p{color:#102b43!important;font-weight:500}
+@media(min-width:901px){
+ html body[data-home-design][data-visual-style] .official-nav{padding-inline:clamp(30px,calc((100vw - 1280px)/2 + 30px),300px)!important}
+ html body[data-home-design][data-visual-style] .official-nav .official-brand,
+ html body[data-home-design][data-visual-style] .official-nav .official-quote{align-self:center}
+}/* Match the content grid margins and brighten the catalog introduction. */
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-section-head>p{color:#f3f8fc!important;font-weight:500;text-shadow:0 1px 12px #00182b80}
+@media(min-width:901px){
+ html body[data-home-design][data-visual-style] .official-nav{display:grid!important;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr)!important;gap:24px!important;padding-inline:max(24px,calc((100vw - 1200px)/2))!important}
+ html body[data-home-design][data-visual-style] .official-nav .official-brand{justify-self:start;margin:0!important}
+ html body[data-home-design][data-visual-style] .official-nav nav{justify-self:center;flex:none!important}
+ html body[data-home-design][data-visual-style] .official-nav .official-quote{justify-self:end;margin:0!important}
+}/* Requested homepage micro-adjustments. */
+html body[data-home-design][data-visual-style] main .retained-design section#cobertura#cobertura .home-coverage-copy>.home-kicker{color:#8bdcf3!important;text-transform:uppercase;letter-spacing:.09em;font-weight:700}
+html body[data-home-design][data-visual-style] main section#faq#faq .official-questions summary:after{content:none!important;display:none!important}/* Circular support photograph, retaining the full-resolution source image. */
+html body[data-home-design][data-visual-style] main .retained-design section#soporte#soporte .home-support-visual{
+ width:min(100%,620px);height:auto!important;aspect-ratio:1/1;margin-inline:auto;border-radius:50%!important;overflow:hidden;
+}
+html body[data-home-design][data-visual-style] main .retained-design section#soporte#soporte .home-support-visual>img{
+ display:block;width:100%;height:100%;object-fit:cover;object-position:center;border-radius:50%;
+}
+html body[data-home-design][data-visual-style] main .retained-design section#soporte#soporte .home-support-visual>div{
+ inset:auto 9% 16%!important;padding:clamp(12px,2vw,20px)!important;border-radius:12px!important;
+ background:rgba(244,250,255,.94)!important;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+}/* Fiber-optic background treatment for the brand slogan. */
+html body[data-home-design][data-visual-style] .official-fiber-slogan{
+ position:relative!important;isolation:isolate;background-color:#04172d!important;
+ background-image:url("../ISONet_Oficial/assets/foto-fibra-fondo.webp")!important;
+ background-position:center 52%!important;background-size:cover!important;background-repeat:no-repeat!important;
+ border-color:#91dff24a!important;
+}
+html body[data-home-design][data-visual-style] .official-fiber-slogan:before{
+ content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+ background:linear-gradient(90deg,rgba(3,18,39,.58),rgba(4,22,45,.28) 50%,rgba(3,18,39,.58));
+}
+html body[data-home-design][data-visual-style] .official-fiber-slogan>.relative{position:relative;z-index:1}/* Slogan band designed as a visual bridge into the dark footer. */
+html body[data-home-design][data-visual-style] .official-fiber-slogan{
+ padding:clamp(92px,11vw,142px) 0 84px!important;margin:0!important;isolation:isolate;overflow:hidden;
+ background-color:#071a2e!important;
+ background-image:linear-gradient(180deg,rgba(7,26,46,.30) 0%,rgba(7,26,46,.42) 44%,#071a2e 100%),url("../ISONet_Oficial/assets/foto-fibra-fondo.webp")!important;
+ background-position:center,center 67%!important;background-size:cover,cover!important;background-repeat:no-repeat!important;
+ border-top:1px solid #6dc9e929!important;border-bottom:0!important;
+}
+html body[data-home-design][data-visual-style] .official-fiber-slogan:before{
+ content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+ background:linear-gradient(180deg,rgba(7,26,46,.08) 0%,rgba(7,26,46,.10) 48%,rgba(7,26,46,.88) 100%);
+}
+html body[data-home-design][data-visual-style] .official-fiber-slogan:after{
+ content:"";position:absolute;z-index:1;left:0;right:0;bottom:0;height:2px;pointer-events:none;
+ background:linear-gradient(90deg,transparent 0%,#4ec9eb70 22%,#5bc9e9 43%,#f1a36a 56%,#5bc9e9 76%,transparent 100%);
+ box-shadow:0 0 18px #53c5e766;
+}
+html body[data-home-design][data-visual-style] .official-fiber-slogan>.relative{position:relative;z-index:2}
+html body[data-home-design][data-visual-style] .official-fiber-slogan+footer{margin-top:0!important;background:#071a2e!important}/* Keep solution cards stationary during wheel scrolling and pointer hover. */
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service{
+ position:relative!important;top:auto!important;transform:none!important;translate:none!important;scale:none!important;
+ will-change:auto!important;transition:border-color 180ms ease,box-shadow 180ms ease!important;
+}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service:hover,
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service:focus-visible,
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service:active{
+ top:auto!important;transform:none!important;translate:none!important;scale:none!important;
+}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service:hover{border-color:#9fc3da!important;box-shadow:0 10px 26px #0a294418!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service-photo img{transform:none!important}/* Keep card copy fully visible on entry, while preserving its hover feedback. */
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service{
+ background:#fff!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;
+ transform:none!important;translate:none!important;scale:none!important;will-change:auto!important;
+ transition:transform 220ms cubic-bezier(.23,1,.32,1),border-color 180ms ease,box-shadow 220ms ease!important;
+}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service:hover,
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service:focus-visible{
+ transform:translateY(-4px)!important;translate:none!important;scale:none!important;
+ border-color:#9fc3da!important;box-shadow:0 14px 30px #0a29441c!important;
+}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service:active{
+ transform:translateY(-1px) scale(.995)!important;
+}/* Hero connection facts as independent, centered glass cards. */
+html body[data-home-design][data-visual-style] main #inicio .professional-facts{
+ display:grid!important;grid-template-columns:repeat(14,minmax(0,1fr))!important;gap:12px!important;
+ padding:0!important;margin-top:auto;border:0!important;background:transparent!important;
+ color:#f0f7fc!important;font-size:12px;line-height:1.45;text-align:center;
+}
+html body[data-home-design][data-visual-style] main #inicio .professional-facts>div{
+ grid-column:span 2;display:flex;align-items:center;justify-content:center;min-height:68px;
+ padding:12px 10px!important;border:1px solid #c6e5f238!important;border-radius:12px!important;
+ background:rgba(5,27,46,.68)!important;box-shadow:inset 0 1px 0 #ffffff12,0 8px 20px #03132224!important;
+ text-align:center!important;line-height:1.45;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+}
+@media(max-width:900px){
+ html body[data-home-design][data-visual-style] main #inicio .professional-facts{grid-template-columns:repeat(8,minmax(0,1fr))!important;gap:10px!important}
+ html body[data-home-design][data-visual-style] main #inicio .professional-facts>div{grid-column:span 2}
+ html body[data-home-design][data-visual-style] main #inicio .professional-facts>div:nth-child(5){grid-column:2 / span 2}
+ html body[data-home-design][data-visual-style] main #inicio .professional-facts>div:nth-child(6){grid-column:4 / span 2}
+ html body[data-home-design][data-visual-style] main #inicio .professional-facts>div:nth-child(7){grid-column:6 / span 2}
+}
+@media(max-width:600px){
+ html body[data-home-design][data-visual-style] main #inicio .professional-facts{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+ html body[data-home-design][data-visual-style] main #inicio .professional-facts>div{grid-column:span 1!important;min-height:64px;padding:10px 8px!important}
+ html body[data-home-design][data-visual-style] main #inicio .professional-facts>div:nth-child(7){grid-column:1 / -1!important;width:50%;justify-self:center}
+}/* Icon and label stack for the hero fact cards. */
+html body[data-home-design][data-visual-style] main #inicio .professional-facts>div{flex-direction:column;gap:7px}
+html body[data-home-design][data-visual-style] main #inicio .professional-facts>div>.material-symbols-outlined{font-size:22px;line-height:1;color:#8bdcf3;font-variation-settings:'FILL' 0,'wght' 500,'GRAD' 0,'opsz' 24}
+html body[data-home-design][data-visual-style] main #inicio .professional-facts>div>span:last-child{display:block}/* Match the catalog intro to the FAQ supporting-copy palette. */
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-section-head>p{color:#d7eaf4!important;text-shadow:0 1px 10px #00182b66}/* Animated fiber-optic strands replace the static slogan photograph. */
+html body[data-home-design][data-visual-style] .official-fiber-slogan{
+ background-color:#071a2e!important;
+ background-image:radial-gradient(ellipse at 50% 110%,rgba(22,115,153,.27),transparent 48%),linear-gradient(180deg,#0b2942 0%,#071a2e 100%)!important;
+}
+html body[data-home-design][data-visual-style] .official-fiber-slogan:before{background:linear-gradient(180deg,rgba(7,26,46,.08),rgba(7,26,46,.1) 52%,rgba(7,26,46,.65))!important}
+.official-fiber-slogan .fiber-flow-art{position:absolute;inset:0;width:100%;height:100%;z-index:1;overflow:visible;pointer-events:none;opacity:.9}
+.official-fiber-slogan .fiber-traces path{opacity:.5;filter:drop-shadow(0 0 4px #44c6e955)}
+.official-fiber-slogan .fiber-pulse{stroke-dasharray:2 36;animation:fiber-signal-flow 5.5s linear infinite;filter:drop-shadow(0 0 5px #5bdcf4)}
+.official-fiber-slogan .pulse-b{animation-duration:6.8s;animation-direction:reverse;animation-delay:-2.4s}
+.official-fiber-slogan .pulse-c{animation-duration:7.2s;animation-delay:-4.1s}
+.official-fiber-slogan .fiber-core{filter:drop-shadow(0 0 10px #55d9f4);animation:fiber-core-pulse 2.6s ease-in-out infinite}
+@keyframes fiber-signal-flow{to{stroke-dashoffset:-228}}
+@keyframes fiber-core-pulse{0%,100%{opacity:.45;filter:drop-shadow(0 0 4px #55d9f4)}50%{opacity:1;filter:drop-shadow(0 0 12px #55d9f4)}}
+@media(prefers-reduced-motion:reduce){.official-fiber-slogan .fiber-pulse,.official-fiber-slogan .fiber-core{animation:none!important}.official-fiber-slogan .fiber-pulse{stroke-dasharray:none;opacity:.65}}/* Performance: keep the fiber artwork light and animate only while it is visible. */
+.official-fiber-slogan .fiber-flow-art{opacity:.72!important}
+.official-fiber-slogan .fiber-traces path{filter:none!important;opacity:.34}
+.official-fiber-slogan .fiber-pulse{filter:none!important;stroke-dasharray:none!important;opacity:.32;animation:fiber-signal-breathe 4.6s ease-in-out infinite!important;animation-play-state:paused!important}
+.official-fiber-slogan .fiber-pulse.pulse-b{animation-duration:5.8s!important;animation-delay:-2s!important}
+.official-fiber-slogan .fiber-pulse.pulse-c{display:none!important}
+.official-fiber-slogan.fiber-active .fiber-pulse{animation-play-state:running!important}
+.official-fiber-slogan .fiber-core{filter:none!important;animation:fiber-core-soft 3.2s ease-in-out infinite!important;animation-play-state:paused!important}
+.official-fiber-slogan.fiber-active .fiber-core{animation-play-state:running!important}
+@keyframes fiber-signal-breathe{0%,100%{opacity:.18}50%{opacity:.8}}
+@keyframes fiber-core-soft{0%,100%{opacity:.45}50%{opacity:1}}
+@media(prefers-reduced-motion:reduce){.official-fiber-slogan .fiber-pulse,.official-fiber-slogan .fiber-core{animation:none!important;opacity:.55!important}}/* Matching fiber strands frame the slogan from above. */
+.official-fiber-slogan .fiber-top-traces path{opacity:.26}
+.official-fiber-slogan .pulse-top-left{animation-delay:-1.4s!important}
+.official-fiber-slogan .pulse-top-right{animation-delay:-3.1s!important}
