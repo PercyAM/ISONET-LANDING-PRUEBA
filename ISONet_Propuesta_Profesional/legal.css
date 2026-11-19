@@ -63,3 +63,14 @@
 @keyframes cookie-banner-in{from{opacity:0;transform:translate(-50%,12px)}to{opacity:1;transform:translate(-50%,0)}}
 @media(max-width:720px){.isonet-cookie-banner{bottom:.65rem;grid-template-columns:1fr;gap:.7rem;width:calc(100% - 1rem);padding:.9rem;border-radius:15px}.isonet-cookie-actions{justify-content:flex-end}.isonet-cookie-actions button{flex:1}}
 @media(prefers-reduced-motion:reduce){.isonet-cookie-banner{animation:none}.isonet-cookie-actions button{transition:none}}
+
+/* Keep section headings legible over the dark glass panel, overriding the shared light-theme heading token. */
+.legal-main .legal-document h2,.legal-main .legal-document h3{color:#f7fbff!important}
+.legal-main .legal-document p,.legal-main .legal-document li{color:#d7e6f0!important}
+.legal-main .legal-document strong{color:#fff!important}
+/* Compact the consent strip so it leaves footer links visible and clickable. */
+.isonet-cookie-banner{bottom:0;padding:.55rem .9rem;gap:.75rem;pointer-events:none}
+.isonet-cookie-copy{font-size:.91rem;line-height:1.42}
+.isonet-cookie-copy a,.isonet-cookie-actions{pointer-events:auto}
+.isonet-cookie-actions button{min-height:42px;padding:.55rem 1.05rem}
+@media(max-width:720px){.isonet-cookie-banner{bottom:0;padding:.7rem}.isonet-cookie-actions button{min-height:42px}}
