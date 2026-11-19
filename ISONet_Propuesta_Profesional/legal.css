@@ -48,3 +48,18 @@
 .legal-footer-links a:hover,.legal-footer-links a:focus-visible{color:#75d8f1;text-decoration:underline;text-underline-offset:4px}
 @media(max-width:640px){.legal-main{padding:7.25rem .9rem 3rem}.legal-document{border-radius:18px}.legal-draft-notice{display:grid}.legal-draft-notice strong{white-space:normal}.legal-field-grid{grid-template-columns:1fr}.legal-field-grid .full{grid-column:auto}.legal-preference-row{align-items:flex-start}.legal-footer-links{justify-content:flex-start;gap:.8rem 1rem}}
 @media(prefers-reduced-motion:reduce){.legal-back,.legal-primary,.legal-secondary,.legal-footer-links a{transition:none}}
+
+/* Consent banner inspired by the supplied reference, using only verified cookie details. */
+.isonet-cookie-banner{position:fixed;z-index:10000;left:50%;bottom:1.15rem;transform:translateX(-50%);width:min(calc(100% - 2rem),1120px);display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:1.25rem;padding:.9rem 1rem .9rem 1.2rem;border:1px solid rgba(20,55,84,.16);border-radius:18px;background:rgba(255,255,255,.96);color:#243b53;box-shadow:0 14px 46px rgba(2,21,40,.28);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);font:400 .96rem/1.55 Manrope,system-ui,sans-serif;animation:cookie-banner-in .28s cubic-bezier(.2,.8,.2,1) both}
+.isonet-cookie-banner[hidden]{display:none}
+.isonet-cookie-copy{margin:0;max-width:760px;color:#405770}
+.isonet-cookie-copy a{color:#075fe5;text-decoration:underline;text-underline-offset:3px;font-weight:650;white-space:nowrap}
+.isonet-cookie-actions{display:flex;gap:.55rem;align-items:center}
+.isonet-cookie-actions button{min-height:46px;border-radius:999px;padding:.65rem 1.2rem;font:700 .9rem Manrope,system-ui,sans-serif;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease,background .18s ease}
+.isonet-cookie-actions button:hover{transform:translateY(-1px);box-shadow:0 5px 14px rgba(4,37,68,.13)}
+.isonet-cookie-reject{border:1px solid #ccd7e1;background:#fff;color:#1e293b}
+.isonet-cookie-accept{border:1px solid #0767ed;background:#0767ed;color:#fff}
+.isonet-cookie-actions button:focus-visible,.isonet-cookie-copy a:focus-visible{outline:3px solid #77c8ff;outline-offset:3px}
+@keyframes cookie-banner-in{from{opacity:0;transform:translate(-50%,12px)}to{opacity:1;transform:translate(-50%,0)}}
+@media(max-width:720px){.isonet-cookie-banner{bottom:.65rem;grid-template-columns:1fr;gap:.7rem;width:calc(100% - 1rem);padding:.9rem;border-radius:15px}.isonet-cookie-actions{justify-content:flex-end}.isonet-cookie-actions button{flex:1}}
+@media(prefers-reduced-motion:reduce){.isonet-cookie-banner{animation:none}.isonet-cookie-actions button{transition:none}}
