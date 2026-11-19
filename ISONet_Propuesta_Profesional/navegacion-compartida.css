@@ -127,3 +127,22 @@ html body[data-home-design][data-visual-style] #soporte.home-support .home-suppo
 @media(max-width:1000px){html body[data-home-design][data-visual-style] .official-nav,html body[data-glass-theme] .official-nav{min-height:82px!important}html body[data-home-design][data-visual-style] .official-nav .official-logo,html body[data-glass-theme] .official-nav .official-logo{width:150px!important;height:72px!important}html body[data-home-design][data-visual-style] .official-nav :is(nav>a,.official-solutions-link),html body[data-glass-theme] .official-nav :is(nav>a,.official-solutions-link){font-size:16px!important}html body[data-home-design][data-visual-style] main #inicio.professional-hero .professional-hero-content{transform:translateY(-12px)}html[data-type='service'] body[data-glass-theme] main>section:nth-of-type(2)>.grid>div:first-child{transform:translateY(-10px)}}
 @media(max-width:700px){html body[data-home-design][data-visual-style] .official-nav,html body[data-glass-theme] .official-nav{min-height:76px!important}html body[data-home-design][data-visual-style] .official-nav .official-logo,html body[data-glass-theme] .official-nav .official-logo{width:132px!important;height:66px!important}}
 @media(prefers-reduced-motion:reduce){html body .official-header,html body .official-nav :is(nav>a,.official-solutions-link)::after,html body :is(.professional-button,.home-button,.isonet-primary-button,#cotizar button[type='submit']){transition:none!important}}
+
+/* Soluciones: resumen visual en tarjetas de cristal */
+body[data-glass-theme]:not([data-home-design]) main .service-key-points{padding-block:clamp(54px,7vw,86px)!important;background:rgba(5,27,46,.27)!important}
+body[data-glass-theme]:not([data-home-design]) main .service-key-points .official-section-heading{max-width:760px;margin-bottom:28px}
+body[data-glass-theme]:not([data-home-design]) main .service-key-points-eyebrow{display:inline-block;margin-bottom:10px;color:#8bdcf3!important;font:700 11px/1.4 'Source Sans 3',Arial,sans-serif;letter-spacing:.16em}
+body[data-glass-theme]:not([data-home-design]) main .service-key-points .official-section-heading h2{color:#fff!important;margin:0 0 10px}
+body[data-glass-theme]:not([data-home-design]) main .service-key-points .official-section-heading p{color:#d7eaf4!important;margin:0}
+body[data-glass-theme]:not([data-home-design]) main .service-key-points-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+body[data-glass-theme]:not([data-home-design]) main .service-key-point{display:grid;grid-template-columns:46px minmax(0,1fr);align-content:start;gap:15px;min-height:144px;padding:21px 19px;border:1px solid #badfec55;border-radius:17px;background:rgba(28,43,55,.64);box-shadow:inset 0 1px 0 #ffffff12;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);transition:transform 180ms cubic-bezier(.23,1,.32,1),background-color 180ms ease,border-color 180ms ease}
+body[data-glass-theme]:not([data-home-design]) main .service-key-point:hover{transform:translateY(-3px);background:rgba(33,58,73,.78);border-color:#8bdcf388}
+body[data-glass-theme]:not([data-home-design]) main .service-key-point-icon{display:grid;place-items:center;width:44px;height:44px;border:1px solid #8bdcf355;border-radius:13px;background:#8bdcf31a;color:#8bdcf3!important}
+body[data-glass-theme]:not([data-home-design]) main .service-key-point-icon svg{width:24px;height:24px;color:inherit!important}
+body[data-glass-theme]:not([data-home-design]) main .service-key-point h3{margin:1px 0 7px;color:#f6fbff!important;font:600 16px/1.35 Lexend,Arial,sans-serif!important}
+body[data-glass-theme]:not([data-home-design]) main .service-key-point p{margin:0;color:#d7eaf4!important;font:400 13px/1.65 'Source Sans 3',Arial,sans-serif!important}
+@media(max-width:980px){body[data-glass-theme]:not([data-home-design]) main .service-key-points-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:580px){body[data-glass-theme]:not([data-home-design]) main .service-key-points-grid{grid-template-columns:1fr;gap:12px}body[data-glass-theme]:not([data-home-design]) main .service-key-point{min-height:unset;padding:17px 16px}}
+@media(prefers-reduced-motion:reduce){body[data-glass-theme]:not([data-home-design]) main .service-key-point{transition:none}}
+/* Normalize Arista's dark source plate into the same white mark treatment as the partner row. */
+html body main .official-partner-logo img[src$='arista.jpeg']{filter:grayscale(1) contrast(6)!important;mix-blend-mode:screen!important}
