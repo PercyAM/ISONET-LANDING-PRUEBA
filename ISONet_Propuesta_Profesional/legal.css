@@ -90,3 +90,6 @@
 .legal-complaint-form .legal-field-grid input:disabled::placeholder,.legal-complaint-form .legal-field-grid textarea:disabled::placeholder{color:#c0d2df;opacity:1}
 .legal-complaint-form .legal-check{color:#e5f0f7;overflow-wrap:anywhere}
 @media(max-width:640px){.legal-main{padding-inline:.75rem}.legal-document{padding:1.15rem}.legal-preferences fieldset,.legal-complaint-form fieldset{padding:.85rem}.legal-field-grid{grid-template-columns:minmax(0,1fr)}}
+
+.legal-footer-links a{display:inline-flex;align-items:center;gap:.45rem}
+.legal-footer-links .isonet-legal-icon{width:17px;height:17px;flex:0 0 auto;color:#75d8f1}
