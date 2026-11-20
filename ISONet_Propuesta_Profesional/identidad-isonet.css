@@ -1,11 +1,11 @@
 /* Shared ISONet visual system: two type families, one CTA color, one icon family. */
-:root{--isonet-orange:#b95712;--isonet-orange-hover:#9e470c;--isonet-navy:#102d49;--isonet-cyan:#8bdcf3;--isonet-ink:#102d49;--isonet-body:Manrope,Arial,sans-serif;--isonet-display:Sora,Manrope,Arial,sans-serif}
+:root{--isonet-orange:#ff9100;--isonet-orange-hover:#e68100;--isonet-navy:#102d49;--isonet-cyan:#8bdcf3;--isonet-ink:#102d49;--isonet-body:Manrope,Arial,sans-serif;--isonet-display:Sora,Manrope,Arial,sans-serif}
 html body{font-family:var(--isonet-body)!important}
 html body :is(h1,h2,h3,h4,h5,h6,.font-headline-sm,.font-headline-md,.font-headline-lg){font-family:var(--isonet-display)!important}
 .isonet-ui-icon{width:22px;height:22px;flex:0 0 auto;display:inline-block;color:currentColor}
-.professional-button,.official-quote,.home-button,.isonet-primary-button,#cotizar form button[type=submit],.mobile-action-bar__quote{background:var(--isonet-orange)!important;color:#fff!important;border-color:transparent!important;font-family:var(--isonet-body)!important;font-weight:700!important;transition:background-color .18s ease,transform .18s ease,box-shadow .18s ease!important}
-.professional-button:hover,.official-quote:hover,.home-button:hover,.isonet-primary-button:hover,#cotizar form button[type=submit]:hover,.mobile-action-bar__quote:hover{background:var(--isonet-orange-hover)!important;color:#fff!important;transform:translateY(-1px)}
-.professional-button:focus-visible,.official-quote:focus-visible,.home-button:focus-visible,.isonet-primary-button:focus-visible,#cotizar form button[type=submit]:focus-visible,.mobile-action-bar a:focus-visible{outline:3px solid var(--isonet-cyan)!important;outline-offset:3px}
+.professional-button,.official-quote,.isonet-primary-button,#cotizar form button[type=submit],.mobile-action-bar__quote{background:var(--isonet-orange)!important;color:#111!important;border-color:transparent!important;border-radius:999px!important;font-family:var(--isonet-body)!important;font-weight:700!important;transition:background-color .18s ease,transform .18s ease,box-shadow .18s ease!important;box-shadow:0 3px 8px rgba(20,35,48,.10)!important}
+.professional-button:hover,.official-quote:hover,.isonet-primary-button:hover,#cotizar form button[type=submit]:hover,.mobile-action-bar__quote:hover{background:var(--isonet-orange-hover)!important;color:#111!important;transform:translateY(-1px);box-shadow:0 6px 14px rgba(20,35,48,.16)!important}
+.professional-button:focus-visible,.official-quote:focus-visible,.isonet-primary-button:focus-visible,#cotizar form button[type=submit]:focus-visible,.mobile-action-bar a:focus-visible{outline:3px solid var(--isonet-cyan)!important;outline-offset:3px}
 .professional-facts .isonet-ui-icon{width:23px;height:23px;color:var(--isonet-cyan)}
 .home-support-visual img{display:block;max-width:100%;height:auto;aspect-ratio:1480/1118;object-fit:cover;object-position:center;border-radius:20px}
 .official-footer-accreditations h4{font-family:var(--isonet-display)!important}
@@ -27,7 +27,11 @@ html body :is(h1,h2,h3,h4,h5,h6,.font-headline-sm,.font-headline-md,.font-headli
 .isonet-large-icon{width:28px;height:28px}
 .isonet-small-icon{width:21px;height:21px}
 html body[data-home-design] #beneficios .isonet-large-icon{color:var(--isonet-cyan);stroke-width:1.8}
-body>div.fixed.bottom-6.right-6>a svg{display:block;margin-inline:auto;transform:translateX(-2px)}
+body>div.fixed.bottom-6.right-6>a svg{display:block;margin-inline:auto;transform:none!important}
+.official-quote{display:inline-flex;align-items:center;justify-content:center;min-width:230px;min-height:48px;padding:12px 22px!important;text-align:center}
+.professional-button{min-height:48px;align-items:center;justify-content:center;border-radius:999px!important}
+#cotizar form button[type=submit]{min-height:48px}
+@media(max-width:500px){.official-quote{min-width:0;min-height:44px;padding:11px 14px!important}}
 
 /* Match solution journey and FAQ cards to the light glass cards above. */
 body[data-glass-theme]:not([data-home-design]) main .official-process li,
