@@ -23,28 +23,8 @@ html body :is(h1,h2,h3,h4,h5,h6,.font-headline-sm,.font-headline-md,.font-headli
 }
 @media(prefers-reduced-motion:reduce){.professional-button,.official-quote,.home-button,.isonet-primary-button,#cotizar form button[type=submit],.mobile-action-bar a{transition:none!important}.professional-button:hover,.official-quote:hover,.home-button:hover,.isonet-primary-button:hover,#cotizar form button[type=submit]:hover,.mobile-action-bar a:hover{transform:none}}
 
-/* Consistent solution cards: larger glass panels and top-aligned iconography. */
+
 .isonet-large-icon{width:28px;height:28px}
 .isonet-small-icon{width:21px;height:21px}
-body[data-type="service"] #caracteristicas .service-key-points-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;align-items:stretch}
-body[data-type="service"] #caracteristicas .service-key-point,
-body[data-type="service"] #aplicaciones .grid>div{min-height:230px;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:18px;padding:28px!important;border-radius:18px!important;background:rgba(12,37,58,.68)!important;border:1px solid rgba(190,225,242,.27)!important;color:#eaf6fc!important;box-shadow:0 14px 34px rgba(2,17,30,.16),inset 0 1px rgba(255,255,255,.08)!important;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);transition:transform .2s ease,border-color .2s ease,background-color .2s ease}
-body[data-type="service"] #caracteristicas .service-key-point:hover,
-body[data-type="service"] #aplicaciones .grid>div:hover{transform:translateY(-3px);border-color:rgba(139,220,243,.58)!important;background:rgba(12,37,58,.76)!important}
-body[data-type="service"] #caracteristicas .service-key-point-icon{width:58px;height:58px;display:flex;align-items:center;justify-content:center;margin:0!important;border:1px solid rgba(139,220,243,.36);border-radius:16px;background:rgba(139,220,243,.08);color:var(--isonet-cyan)}
-body[data-type="service"] #caracteristicas .service-key-point-icon svg{width:31px;height:31px}
-body[data-type="service"] #caracteristicas .service-key-point>div{display:grid;gap:9px}
-body[data-type="service"] #caracteristicas .service-key-point h3,
-body[data-type="service"] #aplicaciones .grid>div h3{margin:0!important;color:#f5fbff!important;font:700 18px/1.35 var(--isonet-display)!important}
-body[data-type="service"] #caracteristicas .service-key-point p,
-body[data-type="service"] #aplicaciones .grid>div p{margin:0!important;color:#c8dbe7!important;font:400 15px/1.65 var(--isonet-body)!important}
-body[data-type="service"] #aplicaciones .grid>div>.space-y-4{display:flex;flex-direction:column;gap:17px}
-body[data-type="service"] #aplicaciones .grid>div>.space-y-4>div:first-child{width:58px;height:58px;display:flex;align-items:center;justify-content:center;margin:0!important;border:1px solid rgba(139,220,243,.36);border-radius:16px;background:rgba(139,220,243,.08)!important;color:var(--isonet-cyan)!important}
-body[data-type="service"] #aplicaciones .grid>div>.space-y-4>div:first-child svg{width:31px;height:31px}
-body[data-type="service"] #aplicaciones .grid>div>.flex.items-center{margin-top:auto;padding-top:12px;color:var(--isonet-cyan)!important;font:600 13px/1.45 var(--isonet-body)!important}
-body[data-type="service"] #aplicaciones .grid{align-items:stretch}
-body[data-home-design] #beneficios .isonet-large-icon{color:var(--isonet-cyan);stroke-width:1.8}
+html body[data-home-design] #beneficios .isonet-large-icon{color:var(--isonet-cyan);stroke-width:1.8}
 body>div.fixed.bottom-6.right-6>a svg{display:block;margin-inline:auto;transform:translateX(-2px)}
-@media(max-width:1000px){body[data-type="service"] #caracteristicas .service-key-points-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:700px){body[data-type="service"] #caracteristicas .service-key-points-grid{grid-template-columns:minmax(0,1fr)}body[data-type="service"] #caracteristicas .service-key-point,body[data-type="service"] #aplicaciones .grid>div{min-height:unset;padding:24px!important}body[data-type="service"] #aplicaciones .grid{grid-template-columns:minmax(0,1fr)!important}}
-@media(prefers-reduced-motion:reduce){body[data-type="service"] #caracteristicas .service-key-point,body[data-type="service"] #aplicaciones .grid>div{transition:none}body[data-type="service"] #caracteristicas .service-key-point:hover,body[data-type="service"] #aplicaciones .grid>div:hover{transform:none}}
