@@ -28,3 +28,18 @@ html body :is(h1,h2,h3,h4,h5,h6,.font-headline-sm,.font-headline-md,.font-headli
 .isonet-small-icon{width:21px;height:21px}
 html body[data-home-design] #beneficios .isonet-large-icon{color:var(--isonet-cyan);stroke-width:1.8}
 body>div.fixed.bottom-6.right-6>a svg{display:block;margin-inline:auto;transform:translateX(-2px)}
+
+/* Match solution journey and FAQ cards to the light glass cards above. */
+body[data-glass-theme]:not([data-home-design]) main .official-process li,
+body[data-glass-theme]:not([data-home-design]) main .official-questions details{background:rgba(249,252,255,.92)!important;border:1px solid rgba(219,232,241,.96)!important;border-radius:18px!important;box-shadow:0 12px 30px rgba(20,48,70,.10),inset 0 1px rgba(255,255,255,.9)!important;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+body[data-glass-theme]:not([data-home-design]) main .official-process li{border-top:1px solid rgba(219,232,241,.96)!important}
+body[data-glass-theme]:not([data-home-design]) main .official-process li:hover,
+body[data-glass-theme]:not([data-home-design]) main .official-questions details:hover{transform:translateY(-2px);border-color:rgba(95,182,215,.62)!important;box-shadow:0 16px 34px rgba(20,48,70,.14),inset 0 1px #fff!important}
+body[data-glass-theme]:not([data-home-design]) main .official-process li>span{color:#118eb5!important;font-family:var(--isonet-display)!important;font-weight:700}
+body[data-glass-theme]:not([data-home-design]) main .official-process li h3{color:#24445d!important;font-family:var(--isonet-display)!important}
+body[data-glass-theme]:not([data-home-design]) main .official-process li p,
+body[data-glass-theme]:not([data-home-design]) main .official-questions .official-answer{color:#475569!important}
+body[data-glass-theme]:not([data-home-design]) main .official-questions summary{color:#24445d!important}
+body[data-glass-theme]:not([data-home-design]) main .official-questions details[open] summary{color:#0b6282!important}
+body[data-glass-theme]:not([data-home-design]) main .official-questions .official-answer a{color:#075f87!important}
+@media(prefers-reduced-motion:reduce){body[data-glass-theme]:not([data-home-design]) main .official-process li,body[data-glass-theme]:not([data-home-design]) main .official-questions details{transition:none}body[data-glass-theme]:not([data-home-design]) main .official-process li:hover,body[data-glass-theme]:not([data-home-design]) main .official-questions details:hover{transform:none}}
