@@ -52,7 +52,7 @@ html body[data-visual-style][data-home-design] main #inicio .professional-facts{
 
 
 /* Four compact feature cards aligned in one row at the bottom of the hero. */
-html body[data-home-design][data-visual-style] main #inicio.professional-hero .professional-facts{position:relative!important;z-index:3;top:auto!important;right:auto!important;left:auto!important;bottom:auto!important;width:min(920px,calc(100% - 96px))!important;align-self:center;margin:0 auto 26px!important;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;grid-template-rows:84px!important;gap:14px!important;transform:none!important}
+html body[data-home-design][data-visual-style] main #inicio.professional-hero .professional-facts{position:relative!important;z-index:3;top:auto!important;right:auto!important;left:auto!important;bottom:auto!important;width:min(1360px,calc(100% - 96px))!important;align-self:center;margin:0 auto 26px!important;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;grid-template-rows:84px!important;gap:14px!important;transform:none!important}
 html body[data-home-design][data-visual-style] main #inicio.professional-hero .professional-facts>div{grid-column:auto!important;grid-row:auto!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:7px!important;width:auto!important;height:84px!important;min-height:84px!important;padding:9px 12px!important;border:1px solid rgba(235,248,255,.28)!important;border-radius:16px!important;background:rgba(8,30,48,.72)!important;box-shadow:0 10px 24px rgba(3,20,34,.15),inset 0 1px rgba(255,255,255,.1)!important;text-align:center!important;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
 html body[data-home-design][data-visual-style] main #inicio.professional-hero .professional-facts .isonet-ui-icon{width:22px!important;height:22px!important;flex:0 0 22px!important;color:#8bdcf3!important}
 html body[data-home-design][data-visual-style] main #inicio.professional-hero .professional-facts strong{display:block;max-width:100%;margin:0;color:#fff!important;font-size:12px;line-height:1.3;font-weight:650}
@@ -65,3 +65,14 @@ html body #cotizar form button[type=submit]{min-height:52px}
 html body[data-visual-style] .official-nav .official-quote{background:#ff9815!important;color:#101820!important;border-radius:9999px!important}
 html body .professional-button:hover,html body .official-quote:hover,html body .isonet-primary-button:hover,html body #cotizar form button[type=submit]:hover,html body .mobile-action-bar__quote:hover{background:#e98300!important;color:#101820!important;box-shadow:0 6px 14px rgba(20,35,48,.16)!important}
 @media(max-width:500px){html body .official-quote{min-width:0;min-height:44px;padding:11px 14px!important}}
+
+
+/* Reference-inspired broad, evenly spaced hero feature row. */
+html body[data-home-design][data-visual-style] main #inicio.professional-hero .professional-facts{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:16px!important}
+html body[data-home-design][data-visual-style] main #inicio.professional-hero .professional-facts>div{border-radius:16px!important}
+/* Enforce the same rounded silhouette on every quote CTA. */
+html body[data-home-design][data-visual-style] main #inicio.professional-hero a.professional-button,
+html body .official-nav a.official-quote,
+html body #cotizar form button[type=submit],
+html body a.isonet-primary-button,
+html body .mobile-action-bar a.mobile-action-bar__quote{border-radius:9999px!important;background:#ff9815!important;color:#101820!important;box-shadow:0 3px 9px rgba(20,35,48,.12)!important}
