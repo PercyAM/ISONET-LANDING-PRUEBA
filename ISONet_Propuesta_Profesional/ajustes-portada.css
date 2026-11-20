@@ -716,3 +716,8 @@ html body[data-home-design][data-visual-style] .official-fiber-slogan:before{bac
  html body[data-home-design][data-visual-style] main .retained-design section#soluciones .home-services>.home-service,
  html body[data-home-design][data-visual-style] main .retained-design section#soluciones .home-services>.home-service:nth-child(n){grid-column:1/-1!important;grid-row:auto!important;width:100%!important;min-width:0!important;max-width:100%!important;transform:none!important}
 }
+
+/* Auditoría de contenido: cinco datos verificables en el hero */
+body[data-home-design] #inicio .professional-facts{grid-template-columns:repeat(5,minmax(0,1fr))!important}
+@media(max-width:900px){body[data-home-design] #inicio .professional-facts{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+@media(max-width:639px){body[data-home-design] #inicio .professional-facts{grid-template-columns:repeat(2,minmax(0,1fr))!important}body[data-home-design] #inicio .professional-facts>div:last-child{grid-column:auto!important}}
