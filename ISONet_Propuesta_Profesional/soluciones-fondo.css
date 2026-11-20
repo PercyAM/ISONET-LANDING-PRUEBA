@@ -21,7 +21,7 @@ body[data-glass-theme]:not([data-home-design]) main .bg-surface-container-lowest
  background:rgba(255,255,255,.92)!important;border:1px solid #ffffffb0!important;backdrop-filter:none!important;
 }
 body[data-glass-theme]:not([data-home-design]) main .bg-surface-container-lowest :is(h2,h3,h4,p,li,label,span,.text-primary,.text-on-surface-variant){color:#24445d!important}
-body[data-glass-theme]:not([data-home-design]) main .bg-surface-container-lowest :is(svg,.material-symbols-outlined){color:#087fa6!important}
+body[data-glass-theme]:not([data-home-design]) main .bg-surface-container-lowest :is(svg,.isonet-ui-icon){color:#087fa6!important}
 body[data-glass-theme]:not([data-home-design]) main form :is(input,select,textarea){background:#f8fbfd!important;color:#17364d!important;border:1px solid #a9becd!important}
 body[data-glass-theme]:not([data-home-design]) main form :is(input,textarea)::placeholder{color:#587184!important;opacity:1}
 body[data-glass-theme]:not([data-home-design]) main form button[type='submit'],
@@ -36,7 +36,7 @@ body[data-glass-theme]:not([data-home-design]) footer{background:#071a2e!importa
 @media(max-width:700px){body[data-glass-theme]:not([data-home-design]){background-attachment:scroll!important}}
 /* Consistent service typography, glass panels, controls and accents. */
 body[data-glass-theme]:not([data-home-design]) main h1{font-family:Manrope,Arial,sans-serif!important;font-weight:700!important}
-body[data-glass-theme]:not([data-home-design]) main :is(h2,h3,h4){font-family:Lexend,Arial,sans-serif!important;font-weight:600!important}
+body[data-glass-theme]:not([data-home-design]) main :is(h2,h3,h4){font-family:Sora,Arial,sans-serif!important;font-weight:600!important}
 body[data-glass-theme]:not([data-home-design]) main .official-process li>span{font-family:Manrope,Arial,sans-serif;font-weight:700}
 body[data-glass-theme]:not([data-home-design]) main a[href='#cotizar'],
 body[data-glass-theme]:not([data-home-design]) main button[type='submit']{background:#f89010!important;color:#102b43!important;border-radius:999px!important;padding:14px 24px;transition:background-color 180ms ease,transform 180ms ease}

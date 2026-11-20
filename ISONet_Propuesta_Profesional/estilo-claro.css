@@ -1,15 +1,15 @@
 /* ISONet / light visual edition. Layout and commercial content are unchanged.
-   Lexend headings + Source Sans 3 body; white, slate, blue and orange. */
+   Sora headings + Manrope body; white, slate, blue and orange. */
 html body[data-visual-style="claro"][data-home-design]{
  --cl-ink:#0b1220;--cl-copy:#475569;--cl-blue:#0668ff;--cl-orange:#f89010;--cl-surface:#f4f7fb;--cl-border:#dbe4f0;
  --p-orange:#f89010;--brand-orange:#f89010;--brand-blue:#0668ff;
- background:#f4f7fb!important;color:#475569;font-family:'Source Sans 3',Arial,sans-serif!important;font-size:17px;
+ background:#f4f7fb!important;color:#475569;font-family:'Manrope',Arial,sans-serif!important;font-size:17px;
 }
-html body[data-visual-style][data-home-design] main :is(h2,h3,h4){font-family:Lexend,Arial,sans-serif!important;color:#0b1220!important;letter-spacing:-.025em!important}
+html body[data-visual-style][data-home-design] main :is(h2,h3,h4){font-family:Sora,Arial,sans-serif!important;color:#0b1220!important;letter-spacing:-.025em!important}
 html body[data-visual-style][data-home-design] main h2{font-size:clamp(29px,2.7vw,36px)!important;font-weight:700!important;line-height:1.23!important}
 html body[data-visual-style][data-home-design] main h3{font-size:20px!important;font-weight:600!important;line-height:1.4!important}
-html body[data-visual-style][data-home-design] .retained-design{font-family:'Source Sans 3',Arial,sans-serif;color:#475569}
-html body[data-visual-style][data-home-design] main :is(p,li,.official-answer){font-family:'Source Sans 3',Arial,sans-serif;line-height:1.65!important}
+html body[data-visual-style][data-home-design] .retained-design{font-family:'Manrope',Arial,sans-serif;color:#475569}
+html body[data-visual-style][data-home-design] main :is(p,li,.official-answer){font-family:'Manrope',Arial,sans-serif;line-height:1.65!important}
 html body[data-visual-style][data-home-design] main section :is(h2,h3) span.official-word{color:inherit!important}
 /* Hero exception: same image, frame, spacing, type and content; no tinted overlay. */
 html body[data-visual-style="claro"][data-home-design] main #inicio.professional-hero{
@@ -27,10 +27,10 @@ html body[data-visual-style][data-home-design] #inicio .professional-text-link{c
 html body[data-visual-style][data-home-design] #inicio .professional-facts{background:#09263edb;border-color:#fff4;color:#f0f7fc;padding-inline:22px;border-radius:10px 10px 0 0}
 /* White navigation and bright orange action. */
 html body[data-visual-style] .official-nav{background:#fffffff5;border-color:#e6edf5;box-shadow:0 6px 22px #15304e0b}
-html body[data-visual-style] .official-nav :is(nav>a,.official-solutions-link){font-family:'Source Sans 3',Arial,sans-serif;color:#26354a;font-size:16px;font-weight:600}
-html body[data-visual-style] .official-nav .official-quote{background:#f89010!important;color:#0b1220!important;border-radius:999px!important;font-family:'Source Sans 3',Arial,sans-serif;font-size:15px}
+html body[data-visual-style] .official-nav :is(nav>a,.official-solutions-link){font-family:'Manrope',Arial,sans-serif;color:#26354a;font-size:16px;font-weight:600}
+html body[data-visual-style] .official-nav .official-quote{background:#f89010!important;color:#0b1220!important;border-radius:999px!important;font-family:'Manrope',Arial,sans-serif;font-size:15px}
 html body[data-visual-style] #official-dropdown{background:#fff;border:1px solid #dbe4f0;box-shadow:0 16px 38px #15304e14}
-html body[data-visual-style] #official-dropdown a{color:#26354a;font-family:'Source Sans 3',Arial,sans-serif}
+html body[data-visual-style] #official-dropdown a{color:#26354a;font-family:'Manrope',Arial,sans-serif}
 html body[data-visual-style] #official-dropdown svg{color:#0668ff}
 /* A systematic alternating white / pale slate background sequence. */
 html body[data-visual-style][data-home-design] main section#red-operaciones{background:#fff!important;border-block:1px solid #e4ebf3}
@@ -44,7 +44,7 @@ html body[data-visual-style][data-home-design] main .retained-design section#cob
 html body[data-visual-style][data-home-design] #cobertura .home-kicker{color:#0668ff}
 html body[data-visual-style][data-home-design] #cobertura .home-coverage-copy h2 em{color:#00668a!important}
 html body[data-visual-style][data-home-design] #cobertura .home-coverage-copy>p:not(.home-kicker){color:#475569;font-size:18px}
-html body[data-visual-style][data-home-design] #cobertura .home-coverage-facts strong{color:#164f9f;font-family:Lexend,Arial,sans-serif;font-size:28px}
+html body[data-visual-style][data-home-design] #cobertura .home-coverage-facts strong{color:#164f9f;font-family:Sora,Arial,sans-serif;font-size:28px}
 html body[data-visual-style][data-home-design] #cobertura .home-coverage-facts span,
 html body[data-visual-style][data-home-design] #cobertura .home-cities{color:#52647b;font-size:14px}
 html body[data-visual-style][data-home-design] #cobertura .home-link{color:#0668ff;font-size:16px}
@@ -73,7 +73,7 @@ html body[data-visual-style][data-home-design] #soluciones .home-service-title s
 html body[data-visual-style][data-home-design] #soluciones .home-service p{color:#475569;font-size:17px}
 html body[data-visual-style][data-home-design] #soluciones .home-service ul{color:#52647b;font-size:15px}
 html body[data-visual-style][data-home-design] #soluciones .home-service li:before{background:#0668ff}
-html body[data-visual-style][data-home-design] #soluciones .home-details{font-family:'Source Sans 3',Arial,sans-serif;color:#0668ff;border-color:#e1e9f2;font-size:16px}
+html body[data-visual-style][data-home-design] #soluciones .home-details{font-family:'Manrope',Arial,sans-serif;color:#0668ff;border-color:#e1e9f2;font-size:16px}
 html body[data-visual-style][data-home-design] #soluciones .home-details>span{color:#0668ff}
 /* Support becomes a white editorial block, preserving the process and photograph. */
 html body[data-visual-style][data-home-design] main .retained-design section#soporte.home-support{background:#fff!important;border-block:1px solid #e4ebf3}
@@ -86,13 +86,13 @@ html body[data-visual-style][data-home-design] #soporte.home-support .home-secti
 html body[data-visual-style][data-home-design] main .retained-design #soporte.home-support .home-support-steps h3{color:#0b1220!important;font-size:18px!important}
 html body[data-visual-style][data-home-design] #soporte.home-support .home-support-steps p{color:#475569;font-size:17px}
 html body[data-visual-style][data-home-design] #soporte.home-support .home-support-steps li{border-color:#dbe4f0}
-html body[data-visual-style][data-home-design] #soporte.home-support .home-support-steps li>span{color:#0668ff;font-family:Lexend,Arial,sans-serif;font-size:20px}
+html body[data-visual-style][data-home-design] #soporte.home-support .home-support-steps li>span{color:#0668ff;font-family:Sora,Arial,sans-serif;font-size:20px}
 html body[data-visual-style][data-home-design] #soporte.home-support .home-support-visual{box-shadow:none;border:1px solid #dbe4f0;border-radius:16px}
 html body[data-visual-style][data-home-design] #soporte.home-support .home-support-visual>div{background:#fffffff5;border-color:#e1e9f2}
-html body[data-visual-style][data-home-design] #soporte.home-support .home-support-visual strong{color:#0b1220;font-family:Lexend,Arial,sans-serif;font-size:18px;font-weight:600}
+html body[data-visual-style][data-home-design] #soporte.home-support .home-support-visual strong{color:#0b1220;font-family:Sora,Arial,sans-serif;font-size:18px;font-weight:600}
 html body[data-visual-style][data-home-design] #soporte.home-support .home-support-visual span{color:#475569;font-size:15px}
-html body[data-visual-style][data-home-design] main .retained-design #soporte.home-support a.home-button{background:#f89010!important;color:#0b1220!important;border-radius:999px;font-family:'Source Sans 3',Arial,sans-serif;font-size:16px}
-html body[data-visual-style][data-home-design] main .retained-design #soporte.home-support a.home-link{color:#0668ff!important;font-family:'Source Sans 3',Arial,sans-serif;font-size:16px}
+html body[data-visual-style][data-home-design] main .retained-design #soporte.home-support a.home-button{background:#f89010!important;color:#0b1220!important;border-radius:999px;font-family:'Manrope',Arial,sans-serif;font-size:16px}
+html body[data-visual-style][data-home-design] main .retained-design #soporte.home-support a.home-link{color:#0668ff!important;font-family:'Manrope',Arial,sans-serif;font-size:16px}
 /* Partner logos keep their accepted neutral-white treatment on an isolated dark rail. */
 html body[data-visual-style][data-home-design] main .official-partners-section{background:#0b1220!important;border:0}
 html body[data-visual-style][data-home-design] main .official-partners-section h2{color:#fff!important;font-size:28px!important}
@@ -109,7 +109,7 @@ html body[data-visual-style][data-home-design] main #faq.official-faq h2,
 html body[data-visual-style][data-home-design] main #faq.official-faq h2>span{color:#0b1220!important}
 html body[data-visual-style][data-home-design] main #faq.official-faq .official-section-heading p{color:#475569!important;font-size:18px}
 html body[data-visual-style][data-home-design] main #faq .official-questions details{background:#fff!important;border-color:#dbe4f0!important;border-radius:12px;box-shadow:0 2px 3px #0b122006!important}
-html body[data-visual-style][data-home-design] main #faq .official-questions summary{font:600 17px/1.5 'Source Sans 3',Arial,sans-serif;color:#0b1220!important}
+html body[data-visual-style][data-home-design] main #faq .official-questions summary{font:600 17px/1.5 'Manrope',Arial,sans-serif;color:#0b1220!important}
 html body[data-visual-style][data-home-design] main #faq .official-answer{color:#475569;font-size:17px}
 html body[data-visual-style][data-home-design] main section#cotizar{background:#f4f7fb!important;border-block:1px solid #dbe4f0}
 html body[data-visual-style][data-home-design] main #cotizar .lg\:col-span-5 h2,
@@ -119,10 +119,10 @@ html body[data-visual-style][data-home-design] main #cotizar .lg\:col-span-5>div
 html body[data-visual-style][data-home-design] main #cotizar .lg\:col-span-5>div:last-child{background:#fff!important;border:1px solid #dbe4f0}
 html body[data-visual-style][data-home-design] main #cotizar .lg\:col-span-7{background:#fff!important;border:1px solid #dbe4f0!important;box-shadow:0 3px 8px #0b122009!important}
 html body[data-visual-style][data-home-design] main #cotizar .lg\:col-span-7>h3{font-size:24px!important}
-html body[data-visual-style][data-home-design] #cotizar form :is(input,select,textarea){background:#fff!important;border:1px solid #cbd5e1!important;border-radius:8px!important;font:400 17px 'Source Sans 3',Arial,sans-serif!important;color:#0b1220!important}
-html body[data-visual-style][data-home-design] #cotizar form label{font:600 15px 'Source Sans 3',Arial,sans-serif!important;color:#334155!important}
-html body[data-visual-style][data-home-design] #cotizar form button[type=submit]{background:#f89010!important;color:#0b1220!important;border-radius:999px!important;font:600 17px 'Source Sans 3',Arial,sans-serif!important}
-html body[data-visual-style][data-home-design] footer{background:#0b1220!important;font-family:'Source Sans 3',Arial,sans-serif;font-size:16px}
+html body[data-visual-style][data-home-design] #cotizar form :is(input,select,textarea){background:#fff!important;border:1px solid #cbd5e1!important;border-radius:8px!important;font:400 17px 'Manrope',Arial,sans-serif!important;color:#0b1220!important}
+html body[data-visual-style][data-home-design] #cotizar form label{font:600 15px 'Manrope',Arial,sans-serif!important;color:#334155!important}
+html body[data-visual-style][data-home-design] #cotizar form button[type=submit]{background:#f89010!important;color:#0b1220!important;border-radius:999px!important;font:600 17px 'Manrope',Arial,sans-serif!important}
+html body[data-visual-style][data-home-design] footer{background:#0b1220!important;font-family:'Manrope',Arial,sans-serif;font-size:16px}
 html body[data-visual-style] :is(a,button,input,select,textarea,summary):focus-visible{outline:3px solid #0668ff!important;outline-offset:4px!important}
 @media(max-width:639px){
  html body[data-visual-style][data-home-design] main #inicio.professional-hero{background-position:65% center!important}
@@ -136,6 +136,6 @@ html body[data-visual-style][data-home-design] main section[id] h2 em{font-style
 @media(max-width:639px){html body[data-visual-style][data-home-design] main section[id]:is(#red-operaciones,#cobertura,#beneficios,#soluciones,#soporte,#faq,#cotizar) h2{font-size:29px!important}}
 html body[data-visual-style][data-home-design] #inicio .professional-button{background:#bc5a12!important;color:#fff!important}
 @media(max-width:639px){html body[data-visual-style][data-home-design] main #inicio.professional-hero{background-position:10% center!important}}
-html body[data-visual-style] footer h4{font-family:Lexend,Arial,sans-serif!important;font-size:15px!important;font-weight:600!important;letter-spacing:0!important}
-html body[data-visual-style] footer :is(p,li,a){font-family:'Source Sans 3',Arial,sans-serif!important}
+html body[data-visual-style] footer h4{font-family:Sora,Arial,sans-serif!important;font-size:15px!important;font-weight:600!important;letter-spacing:0!important}
+html body[data-visual-style] footer :is(p,li,a){font-family:'Manrope',Arial,sans-serif!important}
 html body[data-visual-style][data-home-design] main section#soluciones.home-solutions .home-section-head h2{font-size:clamp(38px,4vw,52px)!important}

@@ -72,7 +72,7 @@
 .retained-design .home-benefit-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px}
 .retained-design .home-benefit{border-left:1px solid #6a96b33d;padding-left:28px}
 .retained-design .home-benefit:first-child{border:0;padding-left:0}
-.retained-design .home-benefit>.material-symbols-outlined{font-size:34px;color:#6ed5f3;margin-bottom:24px;display:block}
+.retained-design .home-benefit>.isonet-ui-icon{font-size:34px;color:#6ed5f3;margin-bottom:24px;display:block}
 .retained-design .home-benefit h3{font-size:20px;color:#fff;margin-bottom:14px}
 .retained-design .home-benefit p{font-size:15px;color:#c0d3e1;line-height:1.8}
 .retained-design .home-network{padding:100px 0 64px;background:linear-gradient(140deg,#d1e2ef,#edf5fa)!important}
@@ -250,7 +250,7 @@
 .retained-design .home-benefit-grid{grid-template-columns:1fr;gap:28px}
 .retained-design .home-benefit,.retained-design .home-benefit:nth-child(3){padding:26px 0 0;border-left:0;border-top:1px solid #6a96b33d}
 .retained-design .home-benefit:first-child{padding-top:0;border:0}
-.retained-design .home-benefit>.material-symbols-outlined{margin-bottom:14px;font-size:30px}
+.retained-design .home-benefit>.isonet-ui-icon{margin-bottom:14px;font-size:30px}
 .retained-design .home-benefit h3{font-size:20px;margin-bottom:10px}
 .retained-design .home-benefit p{font-size:15px}
 .retained-design .home-network-panel{padding:20px 12px 0;border-radius:14px}

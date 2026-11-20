@@ -1,0 +1,24 @@
+/* Shared ISONet visual system: two type families, one CTA color, one icon family. */
+:root{--isonet-orange:#b95712;--isonet-orange-hover:#9e470c;--isonet-navy:#102d49;--isonet-cyan:#8bdcf3;--isonet-ink:#102d49;--isonet-body:Manrope,Arial,sans-serif;--isonet-display:Sora,Manrope,Arial,sans-serif}
+html body{font-family:var(--isonet-body)!important}
+html body :is(h1,h2,h3,h4,h5,h6,.font-headline-sm,.font-headline-md,.font-headline-lg){font-family:var(--isonet-display)!important}
+.isonet-ui-icon{width:22px;height:22px;flex:0 0 auto;display:inline-block;color:currentColor}
+.professional-button,.official-quote,.home-button,.isonet-primary-button,#cotizar form button[type=submit],.mobile-action-bar__quote{background:var(--isonet-orange)!important;color:#fff!important;border-color:transparent!important;font-family:var(--isonet-body)!important;font-weight:700!important;transition:background-color .18s ease,transform .18s ease,box-shadow .18s ease!important}
+.professional-button:hover,.official-quote:hover,.home-button:hover,.isonet-primary-button:hover,#cotizar form button[type=submit]:hover,.mobile-action-bar__quote:hover{background:var(--isonet-orange-hover)!important;color:#fff!important;transform:translateY(-1px)}
+.professional-button:focus-visible,.official-quote:focus-visible,.home-button:focus-visible,.isonet-primary-button:focus-visible,#cotizar form button[type=submit]:focus-visible,.mobile-action-bar a:focus-visible{outline:3px solid var(--isonet-cyan)!important;outline-offset:3px}
+.professional-facts .isonet-ui-icon{width:23px;height:23px;color:var(--isonet-cyan)}
+.home-support-visual img{display:block;max-width:100%;height:auto;aspect-ratio:1480/1118;object-fit:cover;object-position:center;border-radius:20px}
+.official-footer-accreditations h4{font-family:var(--isonet-display)!important}
+.mobile-action-bar{display:none}
+@media(max-width:700px){
+ body{padding-bottom:calc(76px + env(safe-area-inset-bottom))!important}
+ .mobile-action-bar{position:fixed;z-index:120;inset:auto 0 0;display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(8,28,46,.92);border-top:1px solid rgba(255,255,255,.14);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+ .mobile-action-bar a{min-height:48px;display:flex;align-items:center;justify-content:center;gap:9px;border-radius:12px;text-decoration:none;font:700 15px/1 var(--isonet-body);transition:background-color .18s ease,transform .18s ease}
+ .mobile-action-bar__quote{box-shadow:0 5px 14px rgba(2,12,22,.22)}
+ .mobile-action-bar__whatsapp{background:#167a55;color:#fff;border:1px solid rgba(255,255,255,.22)}
+ .mobile-action-bar__whatsapp:hover{background:#116746;color:#fff;transform:translateY(-1px)}
+ .mobile-action-bar svg{width:19px;height:19px}
+ body.cookie-open .mobile-action-bar{display:none}
+ body>div.fixed.bottom-6.right-6{display:none!important}
+}
+@media(prefers-reduced-motion:reduce){.professional-button,.official-quote,.home-button,.isonet-primary-button,#cotizar form button[type=submit],.mobile-action-bar a{transition:none!important}.professional-button:hover,.official-quote:hover,.home-button:hover,.isonet-primary-button:hover,#cotizar form button[type=submit]:hover,.mobile-action-bar a:hover{transform:none}}

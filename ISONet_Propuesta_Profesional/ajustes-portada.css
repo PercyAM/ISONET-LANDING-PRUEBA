@@ -257,7 +257,7 @@ html body[data-home-design][data-visual-style] main section#faq#faq .official-se
 html body[data-home-design][data-visual-style] main section#cotizar#cotizar .lg\:col-span-5>div:last-child{background:transparent!important;border:0!important;box-shadow:none!important;padding:0!important}
 html body[data-home-design][data-visual-style] main section#cotizar#cotizar .lg\:col-span-5>div:last-child .w-9.h-9{background:transparent!important;border:0!important;box-shadow:none!important;color:#8bdcf3!important}
 html body[data-home-design][data-visual-style] main section#cotizar#cotizar .lg\:col-span-5>div:last-child :is(.text-outline,.official-contact-numbers a,a[href^="mailto:"]){color:#eef7fb!important}
-html body[data-home-design][data-visual-style] main section#cotizar#cotizar .lg\:col-span-5>div:last-child .material-symbols-outlined{color:#8bdcf3!important}
+html body[data-home-design][data-visual-style] main section#cotizar#cotizar .lg\:col-span-5>div:last-child .isonet-ui-icon{color:#8bdcf3!important}
 /* Override the previous cyan word-highlight rules: every section title is now pure white. */
 html body[data-home-design][data-visual-style] main section:is(#red-operaciones#red-operaciones,#cobertura#cobertura,#beneficios#beneficios,#soluciones#soluciones,#soporte#soporte,#faq#faq,#cotizar#cotizar) h2>span.official-word,
 html body[data-home-design][data-visual-style] main section:is(#red-operaciones#red-operaciones,#cobertura#cobertura,#beneficios#beneficios,#soluciones#soluciones,#soporte#soporte,#faq#faq,#cotizar#cotizar) h2>span.text-secondary,
@@ -280,7 +280,7 @@ html body[data-home-design][data-visual-style] main section#red-operaciones#red-
  box-shadow:inset 0 1px 0 #ffffff12,0 10px 30px #03132228!important;
  backdrop-filter:blur(14px) saturate(125%);-webkit-backdrop-filter:blur(14px) saturate(125%);
 }
-html body[data-home-design][data-visual-style] main section#red-operaciones#red-operaciones .backdrop-blur-2xl .material-symbols-outlined{color:#fff!important}
+html body[data-home-design][data-visual-style] main section#red-operaciones#red-operaciones .backdrop-blur-2xl .isonet-ui-icon{color:#fff!important}
 /* Solution cards: photographic header with translucent blue-glass content. */
 html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service{
  background:rgba(8,34,54,.42)!important;border:1px solid #b8dfef55!important;
@@ -679,7 +679,7 @@ html body[data-home-design][data-visual-style] main #inicio .professional-facts>
  html body[data-home-design][data-visual-style] main #inicio .professional-facts>div:nth-child(7){grid-column:1 / -1!important;width:50%;justify-self:center}
 }/* Icon and label stack for the hero fact cards. */
 html body[data-home-design][data-visual-style] main #inicio .professional-facts>div{flex-direction:column;gap:7px}
-html body[data-home-design][data-visual-style] main #inicio .professional-facts>div>.material-symbols-outlined{font-size:22px;line-height:1;color:#8bdcf3;font-variation-settings:'FILL' 0,'wght' 500,'GRAD' 0,'opsz' 24}
+html body[data-home-design][data-visual-style] main #inicio .professional-facts>div>.isonet-ui-icon{font-size:22px;line-height:1;color:#8bdcf3;font-variation-settings:'FILL' 0,'wght' 500,'GRAD' 0,'opsz' 24}
 html body[data-home-design][data-visual-style] main #inicio .professional-facts>div>span:last-child{display:block}/* Match the catalog intro to the FAQ supporting-copy palette. */
 html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-section-head>p{color:#d7eaf4!important;text-shadow:0 1px 10px #00182b66}/* Animated fiber-optic strands replace the static slogan photograph. */
 html body[data-home-design][data-visual-style] .official-fiber-slogan{
@@ -710,3 +710,9 @@ html body[data-home-design][data-visual-style] .official-fiber-slogan:before{bac
 .official-fiber-slogan .fiber-top-traces path{opacity:.26}
 .official-fiber-slogan .pulse-top-left{animation-delay:-1.4s!important}
 .official-fiber-slogan .pulse-top-right{animation-delay:-3.1s!important}
+/* Mobile service cards: one readable full-width card per row. */
+@media(max-width:600px){
+ html body[data-home-design][data-visual-style] main .retained-design section#soluciones .home-services{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:16px!important}
+ html body[data-home-design][data-visual-style] main .retained-design section#soluciones .home-services>.home-service,
+ html body[data-home-design][data-visual-style] main .retained-design section#soluciones .home-services>.home-service:nth-child(n){grid-column:1/-1!important;grid-row:auto!important;width:100%!important;min-width:0!important;max-width:100%!important;transform:none!important}
+}
