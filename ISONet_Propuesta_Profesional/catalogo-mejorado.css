@@ -5,14 +5,11 @@ html body[data-home-design][data-visual-style] main #soluciones .home-solutions-
 #soluciones .home-solutions-intro h2{margin:0!important;color:var(--solutions-ink)!important;text-align:left!important}
 #soluciones .home-solutions-intro h2 em{color:#0786a8!important}
 #soluciones .home-solutions-intro>div>p{max-width:650px;margin:14px 0 0!important;color:var(--solutions-muted)!important;font-size:15px;line-height:1.7;text-shadow:none!important}
-#soluciones .home-solutions-cta{display:inline-flex;min-height:48px;align-items:center;justify-content:center;padding:0 22px;border:1px solid rgba(20,78,109,.3);border-radius:999px;background:rgba(255,255,255,.56);color:#164d6d;text-decoration:none;font:700 14px/1.2 var(--isonet-body);white-space:nowrap;transition:background-color .2s ease,color .2s ease,border-color .2s ease,transform .2s ease}
-#soluciones .home-solutions-cta:hover{transform:translateY(-2px);border-color:#ff9815;background:#ff9815;color:#102d49}
 #soluciones .home-solutions-tablist{display:flex;flex-wrap:wrap;gap:10px;padding:6px;margin:0 0 24px;border:1px solid rgba(23,58,86,.1);border-radius:18px;background:rgba(255,255,255,.48);width:max-content;max-width:100%}
 #soluciones .home-solutions-tab{display:inline-flex;align-items:center;justify-content:center;gap:11px;min-height:46px;padding:0 18px;border:1px solid transparent;border-radius:12px;background:transparent;color:#35576e;font:700 14px/1.2 var(--isonet-body);cursor:pointer;transition:background-color .18s ease,color .18s ease,box-shadow .18s ease,border-color .18s ease}
 #soluciones .home-solutions-tab span{display:inline-flex;min-width:25px;height:25px;align-items:center;justify-content:center;border-radius:999px;background:rgba(20,78,109,.08);color:#41647a;font-size:11px}
 #soluciones .home-solutions-tab[aria-selected=true]{background:#173a56;color:#fff;box-shadow:0 4px 12px rgba(16,45,73,.16)}
 #soluciones .home-solutions-tab[aria-selected=true] span{background:rgba(255,255,255,.16);color:#dff7ff}
-#soluciones .home-solutions-tab:focus-visible,#soluciones .home-solutions-cta:focus-visible{outline:3px solid #0786c8;outline-offset:3px}
 #soluciones .home-solutions-panel[hidden]{display:none!important}
 #soluciones .home-services{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;justify-content:stretch!important;align-items:stretch;gap:22px!important}
 #soluciones .home-services-two{grid-template-columns:repeat(2,minmax(0,390px))!important;justify-content:center!important}
@@ -32,8 +29,6 @@ html body[data-home-design][data-visual-style] main #soluciones .home-solutions-
 #soluciones .home-details .home-detail-arrow{display:inline-block;color:#006c9f;font-size:19px;line-height:1;transition:transform .18s ease}
 #soluciones .home-service:hover .home-detail-arrow{transform:translateX(5px)}
 @media(max-width:1000px){#soluciones .home-services{grid-template-columns:repeat(2,minmax(0,1fr))!important}#soluciones .home-services:not(.home-services-two) .home-service:last-child{grid-column:1/-1!important;width:calc(50% - 11px);justify-self:center}#soluciones .home-services-two{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
-@media(max-width:700px){#soluciones .home-solutions-intro{display:block!important}#soluciones .home-solutions-cta{margin-top:18px}#soluciones .home-solutions-tablist{width:100%;display:grid;grid-template-columns:1fr 1fr}#soluciones .home-solutions-tab{padding:0 12px;font-size:12px}#soluciones .home-services,#soluciones .home-services-two{grid-template-columns:1fr!important;gap:16px!important}#soluciones .home-services:not(.home-services-two) .home-service:last-child{grid-column:auto!important;width:auto}#soluciones .home-service-content{padding:20px!important}#soluciones .home-service h3{min-height:0;font-size:19px!important}#soluciones .home-service li{white-space:normal}}
-@media(prefers-reduced-motion:reduce){#soluciones .home-service,#soluciones .home-service-photo img,#soluciones .home-details .home-detail-arrow,#soluciones .home-solutions-tab,#soluciones .home-solutions-cta{transition:none!important}#soluciones .home-service:hover,#soluciones .home-service:focus-visible{transform:none!important}}
 /* Higher-specificity final layout rules override legacy 3+2 card placements. */
 html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-section-head.home-solutions-intro{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:36px!important;max-width:none!important;margin:0 0 34px!important;text-align:left!important}
 html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-section-head.home-solutions-intro>div{flex:1;min-width:0}
