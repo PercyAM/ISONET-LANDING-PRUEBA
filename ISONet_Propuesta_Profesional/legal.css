@@ -115,3 +115,61 @@
 .legal-status:not(:empty){padding:.8rem 1rem;border:1px solid rgba(92,218,164,.28);border-radius:12px;background:rgba(17,109,78,.16)}
 .legal-complaint-form :focus-visible{scroll-margin-block:7rem}
 @media(max-width:640px){.legal-form-intro{align-items:flex-start;flex-direction:column;gap:.45rem}.legal-representative{grid-template-columns:1fr}.legal-form-submit{justify-items:stretch}}
+
+/* Improve readability and alignment in the complaint form. */
+.legal-complaint-form fieldset{
+  padding:clamp(1rem,2.5vw,1.5rem);
+  border:1px solid rgba(255,255,255,.78);
+  background:rgba(246,250,253,.97);
+  box-shadow:0 12px 28px rgba(3,22,39,.14);
+}
+.legal-complaint-form legend{color:#153a57;background:#f6fafd;border-radius:999px;padding:.35rem .7rem}
+.legal-complaint-form .legal-field-grid label{
+  display:block;
+  color:#193d59!important;
+  font-size:.94rem;
+  font-weight:700;
+  line-height:1.45;
+}
+.legal-complaint-form .legal-field-grid label>span[aria-hidden="true"]{display:inline;color:#c75f13!important}
+.legal-complaint-form .legal-field-grid label small{display:inline-block;margin-left:.3rem;color:#60778a!important;font-size:.82rem;font-weight:550}
+.legal-complaint-form .legal-field-grid input:not([type="checkbox"]):not([type="radio"]),
+.legal-complaint-form .legal-field-grid select,
+.legal-complaint-form .legal-field-grid textarea{
+  display:block;
+  margin-top:.45rem;
+  border:1px solid #b9cad7!important;
+  border-radius:10px;
+  background:#fff!important;
+  color:#18364e!important;
+  -webkit-text-fill-color:#18364e!important;
+  font:500 .98rem/1.5 Manrope,system-ui,sans-serif;
+  box-shadow:0 1px 2px rgba(15,45,68,.05);
+}
+.legal-complaint-form .legal-field-grid input::placeholder,
+.legal-complaint-form .legal-field-grid textarea::placeholder{color:#62788a!important;-webkit-text-fill-color:#62788a!important;opacity:1}
+.legal-complaint-form .legal-field-grid input[readonly]{background:#eaf1f5!important;color:#24465f!important;-webkit-text-fill-color:#24465f!important;font-weight:700}
+.legal-complaint-form .legal-field-grid select option{background:#fff;color:#18364e}
+.legal-complaint-form .legal-field-grid input:focus-visible,
+.legal-complaint-form .legal-field-grid select:focus-visible,
+.legal-complaint-form .legal-field-grid textarea:focus-visible{outline:3px solid #1682b5!important;outline-offset:2px;border-color:#087eae!important}
+.legal-complaint-form .legal-field-grid .legal-check{display:flex;align-items:flex-start;gap:.7rem;color:#294a62!important;font-weight:500;line-height:1.55}
+.legal-complaint-form .legal-check input{width:1.2rem;height:1.2rem;margin:.14rem 0 0;accent-color:#087eae}
+.legal-complaint-form .legal-field-grid small.full{display:block;margin:.1rem 0 0;color:#526e82!important;font-size:.88rem;line-height:1.5}
+.legal-complaint-form .legal-provider-address{border-color:#f0c99f;background:#fff7ec;color:#24445c}
+.legal-complaint-form .legal-provider-address span{color:#536d80}
+.legal-complaint-form input[type="file"]{padding:.5rem!important;background:#fff!important;color:#24445c!important;-webkit-text-fill-color:#24445c!important}
+.legal-complaint-form input[type="file"]::file-selector-button{color:#173b56;background:#e5f3f9}
+@media(max-width:640px){
+ .legal-complaint-form fieldset{padding:.95rem}
+ .legal-complaint-form .legal-field-grid{gap:.9rem}
+ .legal-complaint-form .legal-field-grid label{font-size:.92rem}
+}
+
+/* This site-wide design reset removes main padding; restore a clear gap below the fixed navigation on legal pages. */
+html body[data-home-design] main.legal-main{padding:clamp(9rem,12vw,10rem) 1.25rem 5rem!important}
+@media(max-width:640px){html body[data-home-design] main.legal-main{padding:8.5rem .75rem 3rem!important}}
+@layer base{
+ .legal-main .legal-document .legal-provider-address strong{color:#193d59!important}
+}
+@media(max-width:640px){.legal-complaint-form :is(input,select,textarea){scroll-margin-block:7rem}}
