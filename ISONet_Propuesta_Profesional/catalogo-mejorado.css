@@ -61,3 +61,7 @@ html body[data-home-design][data-visual-style] main .retained-design section#sol
 html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-solutions-tab[aria-selected=true]{background:rgba(249,252,255,.96);color:#173a56;box-shadow:0 5px 18px rgba(0,12,25,.22)}
 html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-solutions-tab[aria-selected=true] span{background:rgba(0,112,151,.12);color:#075b7b}
 html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service-photo{background:radial-gradient(ellipse at 50% 45%,rgba(129,192,218,.2),transparent 58%),linear-gradient(140deg,rgba(69,101,123,.96),rgba(91,123,145,.94))!important;border-bottom-color:rgba(182,226,241,.22)}
+
+/* Match the site-wide hero photograph and return the service art to white glass. */
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones.home-solutions{background:transparent!important}
+html body[data-home-design][data-visual-style] main .retained-design section#soluciones#soluciones .home-service-photo{background:linear-gradient(145deg,rgba(250,253,255,.95),rgba(229,241,248,.9))!important;border:1px solid rgba(255,255,255,.76);border-bottom-color:rgba(42,110,140,.16);backdrop-filter:blur(14px) saturate(125%);-webkit-backdrop-filter:blur(14px) saturate(125%)}
