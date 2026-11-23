@@ -73,3 +73,9 @@ html body .official-nav a.official-quote,
 html body #cotizar form button[type=submit],
 html body a.isonet-primary-button,
 html body .mobile-action-bar a.mobile-action-bar__quote{border-radius:9999px!important;background:#ff9815!important;color:#101820!important;box-shadow:0 3px 9px rgba(20,35,48,.12)!important}
+
+
+/* Hero: mantener las cuatro características en una sola fila. */
+html body[data-home-design][data-visual-style] main #inicio.professional-hero .professional-facts{grid-template-columns:repeat(4,minmax(0,1fr))!important;grid-auto-flow:column!important;grid-template-rows:84px!important;gap:14px!important}
+@media(max-width:760px){html body[data-home-design][data-visual-style] main #inicio.professional-hero .professional-facts{grid-template-columns:repeat(4,minmax(0,1fr))!important;grid-auto-flow:column!important;grid-template-rows:76px!important;gap:8px!important}}
+
