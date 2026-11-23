@@ -103,11 +103,9 @@ html body[data-home-design][data-visual-style] .official-nav a.official-quote,ht
 html body[data-home-design][data-visual-style] .official-nav a.official-quote:hover,html body[data-glass-theme] .official-nav a.official-quote:hover,html body[data-home-design][data-visual-style] #cotizar button.isonet-quote-button:hover,html[data-type="service"] body[data-glass-theme] main #cotizar button.isonet-quote-button:hover{border-radius:9999px!important;background:#e98300!important;color:#101820!important}
 
 /* Ilustraciones de servicio sobre vidrio: transparencia real y fondo cristalino en el marco. */
-body:not([data-home-design]) main .official-service-portrait{background:linear-gradient(145deg,rgba(170,195,211,.56),rgba(197,216,229,.48))!important;border:1px solid rgba(255,255,255,.42)!important;box-shadow:0 18px 42px rgba(3,28,48,.18),inset 0 1px rgba(255,255,255,.36)!important;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
 body:not([data-home-design]) main .official-service-portrait>.official-circular-image{display:block;width:100%;height:100%;object-fit:contain!important;object-position:center!important;padding:8px!important;background:transparent!important;border-radius:inherit!important}
 
 /* Deeper glass wells make the transparent solution illustrations stand out. */
-body:not([data-home-design]) main .official-service-portrait{background:radial-gradient(ellipse at 50% 45%,rgba(135,198,222,.18),transparent 60%),linear-gradient(145deg,rgba(64,95,117,.95),rgba(83,117,139,.93))!important;border-color:rgba(225,241,248,.46)!important}
 
 /* White translucent glass frames for the solution detail illustrations. */
-body:not([data-home-design]) main .official-service-portrait{background:linear-gradient(145deg,rgba(250,253,255,.95),rgba(229,241,248,.9))!important;border-color:rgba(255,255,255,.82)!important;box-shadow:0 18px 42px rgba(3,28,48,.17),inset 0 1px rgba(255,255,255,.96)!important;backdrop-filter:blur(14px) saturate(125%);-webkit-backdrop-filter:blur(14px) saturate(125%)}
+body:not([data-home-design]) main .official-service-portrait{background:linear-gradient(145deg,rgba(250,253,255,.95),rgba(229,241,248,.9))!important;border:1px solid rgba(255,255,255,.82)!important;box-shadow:0 18px 42px rgba(3,28,48,.17),inset 0 1px rgba(255,255,255,.96)!important;backdrop-filter:blur(14px) saturate(125%);-webkit-backdrop-filter:blur(14px) saturate(125%)}
