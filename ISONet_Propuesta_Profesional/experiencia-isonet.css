@@ -97,37 +97,47 @@
   }
 }
 
+.solution-carousel-frame {
+  position: relative;
+  margin-block-start: clamp(1.25rem, 3vw, 2rem);
+}
+
 .solution-carousel-controls {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
   display: flex;
-  justify-content: flex-end;
-  gap: 10px;
-  margin: 0 0 1rem;
+  align-items: center;
+  justify-content: space-between;
+  pointer-events: none;
 }
 
 .solution-carousel-controls button {
   display: grid;
   place-items: center;
-  width: 58px;
-  height: 52px;
-  border: 0;
-  border-radius: 10px;
-  background: transparent;
+  width: clamp(44px, 4vw, 56px);
+  aspect-ratio: 1;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #10283e;
   color: var(--ux-cta);
+  box-shadow: 0 4px 14px rgb(8 25 41 / 40%);
   cursor: pointer;
+  pointer-events: auto;
 }
 
 .solution-carousel-controls button svg {
-  width: 40px;
-  height: 40px;
+  width: 26px;
+  height: 26px;
 }
 
 .solution-carousel-controls button:hover {
-  color: #ffb451;
-  background: rgb(255 152 21 / 12%);
+  color: #10283e;
+  background: var(--ux-cta);
 }
 
 .solution-carousel-controls button:focus-visible {
-  outline: 2px solid var(--ux-cta);
+  outline: 3px solid var(--ux-cta);
   outline-offset: 2px;
 }
 
