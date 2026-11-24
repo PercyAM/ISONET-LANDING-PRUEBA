@@ -148,4 +148,4 @@ body[data-glass-theme]:not([data-home-design]) main .service-key-point p{margin:
 html body main .official-partner-logo img[src$='arista.jpeg']{filter:grayscale(1) contrast(6)!important;mix-blend-mode:screen!important}
 
 /* Match the service menu icons to the site's cyan accent. */
-#official-dropdown .official-solution-icon { color: var(--isonet-cyan, #8bdcf3); }
+html body[data-glass-theme] #official-dropdown .official-solution-icon { color: var(--isonet-cyan, #8bdcf3); }
