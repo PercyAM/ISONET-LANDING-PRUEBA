@@ -146,3 +146,6 @@ body[data-glass-theme]:not([data-home-design]) main .service-key-point p{margin:
 @media(prefers-reduced-motion:reduce){body[data-glass-theme]:not([data-home-design]) main .service-key-point{transition:none}}
 /* Normalize Arista's dark source plate into the same white mark treatment as the partner row. */
 html body main .official-partner-logo img[src$='arista.jpeg']{filter:grayscale(1) contrast(6)!important;mix-blend-mode:screen!important}
+
+/* Match the service menu icons to the site's cyan accent. */
+#official-dropdown .official-solution-icon { color: var(--isonet-cyan, #8bdcf3); }
