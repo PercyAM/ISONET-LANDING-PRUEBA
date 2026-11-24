@@ -203,3 +203,70 @@ document.addEventListener('click', event => {
     behavior: reduce ? 'instant' : 'smooth'
   });
 });
+
+(() => {
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  let cleanup = () => {};
+
+  function initializeCarousel() {
+    cleanup();
+    const track = document.getElementById('solution-carousel');
+    if (!track || !('IntersectionObserver' in window)) return;
+
+    const controller = new AbortController();
+    const { signal } = controller;
+    let visible = false;
+    let frame = 0;
+    let previousTime;
+    let position = track.scrollLeft;
+    let direction = 1;
+    let manualUntil = 0;
+
+    function updatePlayback() {
+      cancelAnimationFrame(frame);
+      previousTime = undefined;
+      position = track.scrollLeft;
+      const animate = visible && !document.hidden && !reducedMotion.matches;
+      track.classList.toggle('is-auto-scrolling', animate);
+      if (animate) frame = requestAnimationFrame(advance);
+    }
+
+    function advance(time) {
+      const elapsed = Math.min(time - (previousTime ?? time), 40);
+      previousTime = time;
+      const limit = track.scrollWidth - track.clientWidth;
+      if (time < manualUntil || track.contains(document.activeElement) || limit <= 0) {
+        position = track.scrollLeft;
+      } else {
+        if (position >= limit) direction = -1;
+        else if (position <= 0) direction = 1;
+        position = Math.max(0, Math.min(limit, position + direction * elapsed * .026));
+        track.scrollLeft = position;
+      }
+      frame = requestAnimationFrame(advance);
+    }
+
+    const observer = new IntersectionObserver(([entry]) => {
+      visible = entry.isIntersecting;
+      updatePlayback();
+    });
+    observer.observe(track);
+
+    track.closest('section').addEventListener('click', event => {
+      if (event.target.closest('[data-solution-step]')) manualUntil = performance.now() + 900;
+    }, { signal });
+    document.addEventListener('visibilitychange', updatePlayback, { signal });
+    reducedMotion.addEventListener('change', updatePlayback, { signal });
+
+    cleanup = () => {
+      observer.disconnect();
+      cancelAnimationFrame(frame);
+      track.classList.remove('is-auto-scrolling');
+      controller.abort();
+    };
+  }
+
+  initializeCarousel();
+  document.addEventListener('isonet:navigated', initializeCarousel);
+  document.addEventListener('isonet:before-navigate', () => cleanup());
+})();
