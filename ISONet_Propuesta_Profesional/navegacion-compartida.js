@@ -1,4 +1,44 @@
 'use strict';
+
+function scrollToHomeSection(hash, behavior = 'instant') {
+ const main = document.querySelector('body[data-home-design] main');
+ if (!main || !/^#(soluciones|beneficios|soporte|cobertura|cotizar)$/.test(hash)) return false;
+ const section = main.querySelector(hash);
+ const content = section?.firstElementChild;
+ if (!content) return false;
+ const bounds = content.getBoundingClientRect();
+ const headerHeight = document.querySelector('.official-header').offsetHeight;
+ const inset = Math.max(headerHeight + 16, (innerHeight - bounds.height) / 2);
+ window.scrollTo({top: window.scrollY + bounds.top - inset, behavior});
+ return true;
+}
+
+document.addEventListener('click', event => {
+ const link = event.target.closest('.official-header a[href]');
+ if (!link || event.defaultPrevented || event.button !== 0 || event.metaKey ||
+     event.ctrlKey || event.shiftKey || event.altKey || link.target) return;
+ const url = new URL(link.href);
+ const currentPath = location.pathname.replace(/\/$/, '/index.html');
+ if (url.origin !== location.origin || url.pathname.replace(/\/$/, '/index.html') !== currentPath ||
+     url.search !== location.search) return;
+ const behavior = matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth';
+ if (!scrollToHomeSection(url.hash, behavior)) return;
+ event.preventDefault();
+ if (url.hash !== location.hash) {
+  const oldURL = location.href;
+  history.pushState(null, '', url);
+  window.dispatchEvent(new HashChangeEvent('hashchange', {oldURL, newURL: url.href}));
+ }
+ if (event.detail === 0 || matchMedia('(max-width: 900px)').matches) {
+  const heading = document.querySelector(url.hash + ' h2');
+  heading?.setAttribute('tabindex', '-1');
+  heading?.focus({preventScroll: true});
+ }
+});
+
+window.addEventListener('load', () => {
+ if (performance.getEntriesByType('navigation')[0]?.type === 'navigate') scrollToHomeSection(location.hash);
+});
 (()=>{
  const update=()=>document.body.classList.toggle('header-is-scrolled',window.scrollY>24);
  update();window.addEventListener('scroll',update,{passive:true});document.addEventListener('isonet:navigated',update);

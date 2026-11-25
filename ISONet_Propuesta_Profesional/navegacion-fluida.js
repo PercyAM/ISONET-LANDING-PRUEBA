@@ -54,8 +54,8 @@
  const scrollToRoute=(url,restored)=>{
   const saved=document.documentElement.style.scrollBehavior;document.documentElement.style.scrollBehavior='auto';
   if(restored)window.scrollTo({left:restored.x,top:restored.y,behavior:'instant'});
-  else if(url.hash){let id;try{id=decodeURIComponent(url.hash.slice(1))}catch{id=url.hash.slice(1)};document.getElementById(id)?.scrollIntoView({behavior:'instant'});}
-  else window.scrollTo({top:0,left:0,behavior:'instant'});
+  else if(url.hash&&!scrollToHomeSection(url.hash)){let id;try{id=decodeURIComponent(url.hash.slice(1))}catch{id=url.hash.slice(1)};document.getElementById(id)?.scrollIntoView({behavior:'instant'});}
+  else if(!url.hash)window.scrollTo({top:0,left:0,behavior:'instant'});
   document.documentElement.style.scrollBehavior=saved;
  };
  async function navigate(url,{pop=false,restored=null,keyboard=false}={}){

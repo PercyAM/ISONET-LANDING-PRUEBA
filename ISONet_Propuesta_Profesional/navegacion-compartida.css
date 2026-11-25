@@ -149,3 +149,10 @@ html body main .official-partner-logo img[src$='arista.jpeg']{filter:grayscale(1
 
 /* Match the service menu icons to the site's cyan accent. */
 html body[data-glass-theme] #official-dropdown .official-solution-icon { color: var(--isonet-cyan, #8bdcf3); }
+
+.official-solutions-toggle svg { transition: transform 180ms ease; }
+.official-solutions-toggle[aria-expanded="true"] svg { transform: rotate(180deg); }
+
+@media (prefers-reduced-motion: reduce) {
+  .official-solutions-toggle svg { transition: none; }
+}
