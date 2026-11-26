@@ -261,11 +261,11 @@ body[data-ux-polish] #soluciones .solution-tile h3 {
     width: 100%;
     max-width: none !important;
     margin-inline: auto !important;
-    text-align: center !important;
+    text-align: start !important;
   }
 
   body[data-ux-polish] #soluciones .home-solutions-intro :is(h2, p) {
-    text-align: center !important;
+    text-align: start !important;
   }
 
   body[data-ux-polish] #soluciones .home-solutions-intro :is(h2, em, p) {
@@ -278,7 +278,7 @@ body[data-ux-polish] #soluciones .solution-tile h3 {
 
   body[data-ux-polish] #soluciones .home-solutions-intro p {
     max-width: 64ch;
-    margin: .75rem auto 0 !important;
+    margin: .75rem 0 0 !important;
   }
 }
 

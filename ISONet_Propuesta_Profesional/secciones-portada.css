@@ -51,8 +51,24 @@ html body[data-glass-theme][data-ux-polish] main #soporte#soporte .home-support-
   grid-column: span 4;
   border-top: 3px solid #ff9815;
 }
-.glass-service-card:hover, .glass-service-card:focus-within { border-color: var(--glass-cyan); }
-.glass-service-card:first-child:hover, .glass-service-card:first-child:focus-within { border-top-color: #ff9815; }
+.glass-service-card:focus-within {
+  border-color: var(--glass-cyan);
+  box-shadow: inset 0 1px rgb(235 250 255 / .17), 0 0 20px rgb(139 220 243 / .26);
+}
+@media (hover: hover) and (pointer: fine) {
+  .glass-service-card:hover {
+    position: relative;
+    z-index: 1;
+    border-color: var(--glass-cyan);
+    box-shadow: inset 0 0 0 1px rgb(139 220 243 / .42), 0 0 24px rgb(139 220 243 / .32), 0 16px 30px rgb(3 15 28 / .3);
+  }
+}
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .glass-service-card {
+    transition: transform 200ms cubic-bezier(.23, 1, .32, 1), border-color 160ms ease-out, box-shadow 200ms ease-out;
+  }
+  .glass-service-card:hover { transform: translateY(-3px) scale(1.015); }
+}
 .glass-service-icon { flex: none; width: 28px; height: 28px; color: var(--glass-cyan); }
 html body[data-ux-polish] main #soluciones .glass-service-card h3 {
   margin: 0;
