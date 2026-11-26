@@ -233,15 +233,16 @@ document.addEventListener('click', event => {
   const button = event.target.closest('[data-solution-step]');
   if (!button) return;
   const track = document.getElementById(button.getAttribute('aria-controls'));
-  const [first, second] = track?.children ?? [];
-  if (!first || !second) return;
-
-  const distance = second.getBoundingClientRect().left - first.getBoundingClientRect().left;
+  if (!track?.firstElementChild) return;
+  const start = track.firstElementChild.getBoundingClientRect().left;
+  const limit = track.scrollWidth - track.clientWidth;
+  const stops = [...track.children].map(card => Math.min(limit, card.getBoundingClientRect().left - start));
+  const direction = Number(button.dataset.solutionStep);
+  const ordered = direction < 0 ? stops.reverse() : stops;
+  const target = ordered.find(stop => direction * (stop - track.scrollLeft) > 2);
+  if (target === undefined) return;
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  track.scrollBy({
-    left: distance * Number(button.dataset.solutionStep),
-    behavior: reduce ? 'instant' : 'smooth'
-  });
+  track.scrollTo({left: target, behavior: reduce ? 'instant' : 'smooth'});
 });
 
 (() => {
