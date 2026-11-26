@@ -39,27 +39,49 @@ html body[data-glass-theme][data-ux-polish] main #soporte#soporte .home-support-
 html body[data-ux-polish] main #soluciones .glass-service-layout .home-solutions-intro {
   margin-block: 0 !important;
 }
+/* Joined controls echo the site's orange calls to action. */
 .glass-service-controls {
   display: flex;
-  gap: 8px;
+  width: fit-content;
   margin-top: clamp(16px, 2vw, 28px);
+  border: 1px solid var(--glass-edge);
+  border-radius: 14px;
+  background: #172c43;
 }
 .glass-service-controls button {
   display: grid;
   place-items: center;
-  width: 48px;
+  width: 50px;
   height: 48px;
-  border: 1px solid var(--glass-edge);
-  border-radius: 12px;
-  background: var(--glass-surface);
-  color: #ff9815;
-  font-size: 23px;
+  padding: 0 0 3px;
+  border: 0;
+  border-radius: 13px 0 0 13px;
+  background: transparent;
+  color: var(--glass-ink);
+  font-size: 28px;
+  line-height: 1;
   cursor: pointer;
 }
-.glass-service-controls button:hover {
-  border-color: #ff9815;
+.glass-service-controls button + button {
+  border-inline-start: 1px solid var(--glass-edge);
+  border-radius: 0 13px 13px 0;
   background: #ff9815;
   color: #10243d;
+}
+.glass-service-controls button:hover:not([aria-disabled="true"]) {
+  background: #ffae47;
+  color: #10243d;
+}
+.glass-service-controls button[aria-disabled="true"] {
+  background: transparent;
+  color: var(--glass-copy);
+  opacity: .58;
+  cursor: default;
+}
+.glass-service-controls button:focus-visible {
+  outline: 2px solid var(--glass-cyan);
+  outline-offset: 2px;
+  z-index: 1;
 }
 .glass-service-grid {
   display: grid;
@@ -74,6 +96,10 @@ html body[data-ux-polish] main #soluciones .glass-service-layout .home-solutions
   scroll-padding-inline: 8px;
   scrollbar-width: none;
 }
+.glass-service-grid:not([data-at-end="true"]):not(:focus-within) {
+  -webkit-mask-image: linear-gradient(to right, #000 var(--glass-rail-fade, 70%), transparent);
+  mask-image: linear-gradient(to right, #000 var(--glass-rail-fade, 70%), transparent);
+}
 .glass-service-grid::-webkit-scrollbar { display: none; }
 .glass-service-grid:focus-visible {
   outline: 2px solid var(--glass-cyan);
@@ -81,7 +107,10 @@ html body[data-ux-polish] main #soluciones .glass-service-layout .home-solutions
 }
 .glass-service-card {
   min-width: 0;
-  min-height: clamp(280px, 30vw, 405px);
+  width: 100%;
+  box-sizing: border-box;
+  min-height: clamp(370px, 41vw, 570px);
+  aspect-ratio: 4 / 5;
   scroll-snap-align: start;
   display: flex;
   flex-direction: column;
@@ -220,6 +249,6 @@ html body[data-ux-polish] main .glass-partner-grid .official-partner-logo img[sr
   .glass-service-grid { grid-auto-columns: 63%; }
 }
 @media (max-width: 540px) {
-  .glass-service-grid { grid-auto-columns: 88%; }
-  .glass-service-card { min-height: 275px; }
+  .glass-service-grid { grid-auto-columns: 88%; --glass-rail-fade: 90%; }
+  .glass-service-card { min-height: 365px; }
 }

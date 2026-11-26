@@ -229,9 +229,27 @@ document.addEventListener('isonet:before-navigate',()=>fiberObserver?.disconnect
   reduced.addEventListener('change', initializeSlides);
 })();
 
+function updateGlassServiceControls() {
+  const track = document.getElementById('glass-service-track');
+  if (!track) return;
+  const atStart = track.scrollLeft <= 2;
+  const atEnd = track.lastElementChild.getBoundingClientRect().right <= track.getBoundingClientRect().right + 2;
+  track.dataset.atEnd = String(atEnd);
+  const layout = track.closest('.glass-service-layout');
+  layout.querySelector('[data-solution-step="-1"]').setAttribute('aria-disabled', String(atStart));
+  layout.querySelector('[data-solution-step="1"]').setAttribute('aria-disabled', String(atEnd));
+}
+
+updateGlassServiceControls();
+window.addEventListener('resize', updateGlassServiceControls);
+document.addEventListener('isonet:navigated', updateGlassServiceControls);
+document.addEventListener('scroll', event => {
+  if (event.target.id === 'glass-service-track') updateGlassServiceControls();
+}, {capture: true, passive: true});
+
 document.addEventListener('click', event => {
   const button = event.target.closest('[data-solution-step]');
-  if (!button) return;
+  if (!button || button.getAttribute('aria-disabled') === 'true') return;
   const track = document.getElementById(button.getAttribute('aria-controls'));
   if (!track?.firstElementChild) return;
   const start = track.firstElementChild.getBoundingClientRect().left;
