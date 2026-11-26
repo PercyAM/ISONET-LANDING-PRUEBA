@@ -250,3 +250,13 @@ html body[data-ux-polish] main .glass-partner-grid .official-partner-logo img[sr
   .glass-service-grid { grid-auto-columns: 88%; --glass-rail-fade: 90%; }
   .glass-service-card { min-height: 365px; }
 }
+
+
+html body[data-ux-polish] main #partners-title {
+  color: #f6fbff !important;
+  font-family: Sora, Arial, sans-serif;
+  font-size: clamp(29px, 4vw, 46px);
+  font-weight: 700;
+  letter-spacing: -.04em;
+  line-height: 1.12;
+}

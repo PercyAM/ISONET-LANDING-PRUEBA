@@ -70,11 +70,8 @@ function initializeFibers(){
 initializeFibers();document.addEventListener('isonet:navigated',initializeFibers);
 document.addEventListener('isonet:before-navigate',()=>fiberObserver?.disconnect());
 (()=>{
- const body=document.body;
  const header=document.querySelector('.official-header');
  if(!header)return;
- let previousY=Math.max(0,window.scrollY);
- const menuIsOpen=()=>header.querySelector('.official-menu-toggle')?.getAttribute('aria-expanded')==='true'||header.querySelector('.official-solutions-toggle')?.getAttribute('aria-expanded')==='true';
  const syncCurrent=()=>{
   const current=decodeURIComponent(location.pathname.split('/').pop()||'index.html');
   let selected=false;
@@ -87,18 +84,9 @@ document.addEventListener('isonet:before-navigate',()=>fiberObserver?.disconnect
   const services=header.querySelector('.official-solutions-link');
   services?.classList.toggle('is-current',current==='index.html'||selected);
  };
- const onScroll=()=>{
-  const y=Math.max(0,window.scrollY);
-  const delta=y-previousY;
-  if(y<110||delta < -5||menuIsOpen())body.classList.remove('navbar-hidden');
-  else if(delta>7&&y>145)body.classList.add('navbar-hidden');
-  previousY=y;
- };
  syncCurrent();
- window.addEventListener('scroll',onScroll,{passive:true});
  window.addEventListener('popstate',syncCurrent);
- document.addEventListener('isonet:navigated',()=>{body.classList.remove('navbar-hidden');previousY=Math.max(0,window.scrollY);syncCurrent()});
- document.addEventListener('focusin',event=>{if(header.contains(event.target))body.classList.remove('navbar-hidden')});
+ document.addEventListener('isonet:navigated',syncCurrent);
 })();
 
 // Ease discrete mouse-wheel steps. Continuous wheel input stays with the browser.

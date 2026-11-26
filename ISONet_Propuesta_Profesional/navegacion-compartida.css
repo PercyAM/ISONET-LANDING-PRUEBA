@@ -66,8 +66,6 @@ html body[data-glass-theme] main{view-transition-name:isonet-content}
 }
 
 /* Navegación y botones unificados para la portada y las soluciones */
-html body .official-header{transition:transform 240ms cubic-bezier(.22,.68,0,1.02);will-change:transform}
-html body.navbar-hidden .official-header{transform:translate3d(0,-110%,0);pointer-events:none}
 html body .official-nav{min-height:94px!important}
 html body .official-nav .official-logo{width:172px!important;height:82px!important;max-width:none!important;object-fit:contain}
 html body .official-nav nav{gap:clamp(22px,3vw,42px)!important}
@@ -96,7 +94,7 @@ html body[data-home-design] #soporte.home-support .home-support-steps h3{margin-
 html body main .official-partner-logo{flex:0 0 220px;width:220px!important;height:128px!important;padding:13px!important;border-radius:16px!important}
 html body main .official-partner-logo img{width:100%!important;height:100%!important;max-width:194px;max-height:100px;object-fit:contain!important;transform:scale(1.04);filter:grayscale(1) invert(1) brightness(1.8)!important;mix-blend-mode:screen!important}
 html body main .official-partner-logo img[src$='arista.jpeg']{filter:grayscale(1) invert(1) brightness(1.8)!important;mix-blend-mode:screen!important}
-@media(max-width:1000px){html body .official-nav{min-height:82px!important}html body .official-nav .official-logo{width:150px!important;height:72px!important}html body .official-nav :is(nav>a,.official-solutions-link){font-size:16px!important}html body[data-home-design] main #inicio.professional-hero .professional-hero-content{transform:translateY(-12px)}html[data-type='service'] body main>section:nth-of-type(2)>.grid>div:first-child{transform:translateY(-10px)}}
+@media(max-width:1000px){html body .official-nav{min-height:82px!important}html body .official-nav .official-logo{width:150px!important;height:72px!important}html body .official-nav :is(nav>a,.official-solutions-link){font-size:16px!important}html body[data-home-design] main #inicio.professional-hero .professional-hero-content{transform:translateY(-12px)}}
 @media(max-width:700px){html body .official-nav{min-height:76px!important}html body .official-nav .official-logo{width:132px!important;height:66px!important}html body main .official-partner-logo{flex-basis:178px;width:178px!important;height:108px!important;padding:11px!important}html body main .official-partner-logo img{max-width:156px;max-height:84px}}
 @media(prefers-reduced-motion:reduce){html body .official-header,html body .official-nav :is(nav>a,.official-solutions-link)::after,html body :is(.professional-button,.home-button,.isonet-primary-button,#cotizar button[type='submit']){transition:none!important}}
 
@@ -124,7 +122,7 @@ html body[data-home-design][data-visual-style] #soporte.home-support .home-suppo
 html body[data-home-design][data-visual-style] #soporte.home-support .home-support-visual{height:clamp(320px,34vw,440px);max-height:440px;border-radius:20px;overflow:hidden}
 html body[data-home-design][data-visual-style] #soporte.home-support .home-support-steps li{padding-block:17px}
 html body[data-home-design][data-visual-style] #soporte.home-support .home-support-steps h3{margin-bottom:6px}
-@media(max-width:1000px){html body[data-home-design][data-visual-style] .official-nav,html body[data-glass-theme] .official-nav{min-height:82px!important}html body[data-home-design][data-visual-style] .official-nav .official-logo,html body[data-glass-theme] .official-nav .official-logo{width:150px!important;height:72px!important}html body[data-home-design][data-visual-style] .official-nav :is(nav>a,.official-solutions-link),html body[data-glass-theme] .official-nav :is(nav>a,.official-solutions-link){font-size:16px!important}html body[data-home-design][data-visual-style] main #inicio.professional-hero .professional-hero-content{transform:translateY(-12px)}html[data-type='service'] body[data-glass-theme] main>section:nth-of-type(2)>.grid>div:first-child{transform:translateY(-10px)}}
+@media(max-width:1000px){html body[data-home-design][data-visual-style] .official-nav,html body[data-glass-theme] .official-nav{min-height:82px!important}html body[data-home-design][data-visual-style] .official-nav .official-logo,html body[data-glass-theme] .official-nav .official-logo{width:150px!important;height:72px!important}html body[data-home-design][data-visual-style] .official-nav :is(nav>a,.official-solutions-link),html body[data-glass-theme] .official-nav :is(nav>a,.official-solutions-link){font-size:16px!important}html body[data-home-design][data-visual-style] main #inicio.professional-hero .professional-hero-content{transform:translateY(-12px)}}
 @media(max-width:700px){html body[data-home-design][data-visual-style] .official-nav,html body[data-glass-theme] .official-nav{min-height:76px!important}html body[data-home-design][data-visual-style] .official-nav .official-logo,html body[data-glass-theme] .official-nav .official-logo{width:132px!important;height:66px!important}}
 @media(prefers-reduced-motion:reduce){html body .official-header,html body .official-nav :is(nav>a,.official-solutions-link)::after,html body :is(.professional-button,.home-button,.isonet-primary-button,#cotizar button[type='submit']){transition:none!important}}
 
@@ -155,4 +153,18 @@ html body[data-glass-theme] #official-dropdown .official-solution-icon { color: 
 
 @media (prefers-reduced-motion: reduce) {
   .official-solutions-toggle svg { transition: none; }
+}
+
+/* Keep the header visible with a slightly more compact profile. */
+html body[data-glass-theme][data-ux-polish] .official-nav { min-height: 86px !important; }
+html body[data-glass-theme][data-ux-polish] .official-nav .official-logo { width: 158px !important; height: 72px !important; }
+.service-hero-copy { transform: translateY(-26px); }
+@media (max-width: 1000px) {
+  html body[data-glass-theme][data-ux-polish] .official-nav { min-height: 76px !important; }
+  html body[data-glass-theme][data-ux-polish] .official-nav .official-logo { width: 142px !important; height: 64px !important; }
+  .service-hero-copy { transform: translateY(-16px); }
+}
+@media (max-width: 700px) {
+  html body[data-glass-theme][data-ux-polish] .official-nav { min-height: 70px !important; }
+  html body[data-glass-theme][data-ux-polish] .official-nav .official-logo { width: 124px !important; height: 58px !important; }
 }
